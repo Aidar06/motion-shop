@@ -8,3 +8,17 @@
 @import "./src/pages/Basket/basket";
 @import "./src/pages/Faq/faq";
 @import "./src/pages/AboutUs/aboutUs";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+}
