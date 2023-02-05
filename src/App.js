@@ -2,7 +2,7 @@ import './App.css';
 import './styles/style.scss'
 import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
-import {Router , Route} from "react-router-dom";
+import {Routes , Route} from "react-router-dom";
 import Main from "./pages/Main/main";
 import Basket from "./pages/Basket/basket";
 import Faq from "./pages/Faq/faq";
@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <Header/>
-        <Router>
+        <Routes>
             <Route path='/' element={<Main/>}/>
             <Route path='/basket' element={<Basket/>}/>
             <Route path='/faq' element={<Faq/>}/>
@@ -26,7 +26,7 @@ function App() {
             <Route path='/men' element={<ManClothes/>}/>
             <Route path='/children' element={<ChildrenClothes/>}/>
             <Route path='/shoe' element={<Shoe/>}/>
-        </Router>
+        </Routes>
       <Footer/>
     </>
   );
