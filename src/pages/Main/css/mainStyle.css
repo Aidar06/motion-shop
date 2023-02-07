@@ -1,3 +1,199 @@
+#category .category h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #72072D;
+  padding: 40px 0;
+}
+#category .category--block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#category .category--block__man {
+  position: relative;
+}
+#category .category--block__man--one {
+  display: flex;
+  position: absolute;
+  top: 5px;
+  color: #FFFFFF;
+}
+#category .category--block__man--one__icon {
+  position: absolute;
+  bottom: 28px;
+  padding: 2px 43%;
+  color: white;
+  font-size: 27px;
+}
+#category .category--block__man--one p {
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+  padding: 8px 20px 0;
+  position: absolute;
+  bottom: 30px;
+}
+#category .category--block__woman {
+  position: relative;
+}
+#category .category--block__woman--two {
+  display: flex;
+  position: absolute;
+  top: 5px;
+}
+#category .category--block__woman--two__icon {
+  position: absolute;
+  bottom: 28px;
+  padding: 2px 43%;
+  color: white;
+  font-size: 27px;
+}
+#category .category--block__woman--two p {
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+  padding: 8px 20px 0;
+  position: absolute;
+  bottom: 30px;
+}
+#category .category--block__child {
+  position: relative;
+}
+#category .category--block__child--three {
+  display: flex;
+  position: absolute;
+  top: 5px;
+  color: white;
+}
+#category .category--block__child--three__icon {
+  position: absolute;
+  bottom: 28px;
+  padding: 2px 42%;
+  color: white;
+  font-size: 27.9px;
+}
+#category .category--block__child--three p {
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+  padding: 8px 20px 0;
+  position: absolute;
+  bottom: 30px;
+}
+#category .category--block__shoe {
+  position: relative;
+}
+#category .category--block__shoe--four {
+  display: flex;
+  position: absolute;
+  top: 5px;
+}
+#category .category--block__shoe--four__icon {
+  position: absolute;
+  bottom: 28px;
+  padding: 2px 35%;
+  color: white;
+  font-size: 27px;
+}
+#category .category--block__shoe--four p {
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+  padding: 8px 20px 0;
+  position: absolute;
+  bottom: 30px;
+}
 
-
-/*# sourceMappingURL=mainStyle.css.map */
+@media (max-width: 1440px) {
+  #category .category--block__woman {
+    margin: 20px 0;
+  }
+  #category .category--block__child {
+    margin: 20px 0;
+  }
+  #category .category--block__child {
+    margin: 23px 0;
+  }
+}
+@media (max-width: 405px) {
+  #category .category--block__man img {
+    width: 90%;
+  }
+  #category .category--block__man p {
+    font-size: 21px;
+  }
+  #category .category--block__man__icon {
+    font-size: 16px;
+  }
+  #category .category--block__woman img {
+    width: 90%;
+  }
+  #category .category--block__woman p {
+    font-size: 21px;
+  }
+  #category .category--block__woman__icon {
+    font-size: 16px;
+  }
+  #category .category--block__child img {
+    width: 90%;
+  }
+  #category .category--block__child p {
+    font-size: 21px;
+  }
+  #category .category--block__child__icon {
+    font-size: 16px;
+  }
+  #category .category--block__shoe img {
+    width: 90%;
+  }
+  #category .category--block__shoe p {
+    font-size: 21px;
+  }
+  #category .category--block__shoe__icon {
+    font-size: 16px;
+  }
+}
+@media (max-width: 350px) {
+  #category .category--block {
+    display: flex;
+    align-items: center;
+  }
+  #category .category--block__man img {
+    width: 90%;
+  }
+  #category .category--block__man p {
+    font-size: 18px;
+  }
+  #category .category--block__man__icon {
+    font-size: 14px;
+  }
+  #category .category--block__woman img {
+    width: 90%;
+  }
+  #category .category--block__woman p {
+    font-size: 18px;
+  }
+  #category .category--block__woman__icon {
+    font-size: 14px;
+  }
+  #category .category--block__child img {
+    width: 90%;
+  }
+  #category .category--block__child p {
+    font-size: 18px;
+  }
+  #category .category--block__child__icon {
+    font-size: 14px;
+  }
+  #category .category--block__shoe img {
+    width: 90%;
+  }
+  #category .category--block__shoe p {
+    font-size: 18px;
+  }
+  #category .category--block__shoe__icon {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
