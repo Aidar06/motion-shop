@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+#header {
+
+  background: linear-gradient(90deg, #72072D 0%, #FF005C 100%);
+  padding: 20px 0;
+
+  .header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+
+    &--search-form {
+      height: 7rem;
+      padding: 0 2rem;
+      border-top: 0.2rem solid rgba(255, 255, 255, 0.3);
+      display: flex;
+      align-items: center;
+      background: #000;
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+      &:active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+      input{
+        width: 100%;
+        background: none;
+        text-transform: none;
+        font-size: 1.6rem;
+        color: #fff;
+      }
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 40px;
+      color: #FFFFFF;
+    }
+
+    &--search {
+      width: 45%;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      input {
+        width: 100%;
+        height: 40px;
+        padding-left: 20px;
+        background: rgba(196, 196, 196, 0.14);
+        border: 1px solid #FFFFFF;
+        border-radius: 16px;
+        outline: none;
+        color: #ffffff;
+      }
+
+      .BsSearch {
+        position: absolute;
+        right: 20px;
+        color: #FFFFFF;
+      }
+
+    }
+
+    &--nav {
+      display: flex;
+      align-items: center;
+
+      &__faq {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .BsQuestionCircle {
+          color: #ffffff;
+          font-size: 28px;
+        }
+
+        a {
+          font-weight: 400;
+          font-size: 16px;
+          text-align: center;
+          color: #FFFFFF;
+        }
+      }
+
+      &__about {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 50px;
+
+        .HiOutlineClipboardDocumentList {
+          font-size: 30px;
+          color: #ffffff;
+        }
+
+        a {
+          font-weight: 400;
+          font-size: 16px;
+          text-align: center;
+          color: #FFFFFF;
+        }
+      }
+
+      &__shop {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .AiOutlineShoppingCart {
+          color: #FFFFFF;
+          font-size: 33px;
+        }
+
+        a {
+          font-weight: 400;
+          font-size: 16px;
+          text-align: center;
+          color: #FFFFFF;
+        }
+      }
+
+
+    }
+  }
+}
+
+.header .search-form {
+  height: 7rem;
+  padding: 0 2rem;
+  border-top: 0.2rem solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  background: #000;
+  position: absolute;
+  top: 99%;
+  left: 0;
+  right: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.header .search-form.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.header .search-form input {
+  width: 100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.header .fa-times {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1064px) {
+  #header {
+    .header {
+      h1 {
+        font-size: 30px;
+      }
+
+      &--nav {
+        padding: 0 0 0 20px;
+
+        &__about {
+          margin: 0 26px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #header {
+    .header {
+      h1 {
+        font-size: 26px;
+      }
+
+      &--search {
+        input {
+          width: 100%;
+        }
+      }
+
+      &--nav {
+        padding: 0 0 0 20px;
+
+        &__about {
+          margin: 0 23px;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 800px) {
+  #header {
+    .header {
+      h1 {
+        font-size: 25px;
+      }
+
+      &--search {
+        input {
+          width: 100%;
+        }
+      }
+
+      &--nav {
+        font-size: 20px;
+        padding: 0 0 0 20px;
+
+        &__about {
+          margin: 0 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  #header {
+    header {
+      background: #000;
+
+      &--search {
+        display: none;
+      }
+
+      &--nav {
+        display: none
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+
+}
+
+@media (max-width: 400px) {
+
+}
+
+@media (max-width: 375px) {
+
+}
+
+@media (max-width: 320px) {
+
+}

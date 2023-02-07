@@ -1,5 +1,6 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
+// import {BsInstagram, BsWhatsapp, FaFacebookF, FaTelegramPlane} from "react-icons/all";
 import {BsInstagram, BsWhatsapp} from "react-icons/bs";
 import {FaFacebookF, FaTelegramPlane} from "react-icons/fa";
 
