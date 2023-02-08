@@ -16,7 +16,7 @@ const MainClothes = () => {
                         {
                             all.slice(0,mere).map(el => {
                                 return(
-                                    <NavLink to={`/addBasket/${el.id}`}>
+                                    <NavLink to={`/addBasket/${el.id}`} key={el.id}>
                                         <div className='mainClothes--group__block'>
                                             <div>
                                                 <img src={el.img} alt=""/>
