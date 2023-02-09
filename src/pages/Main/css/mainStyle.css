@@ -197,6 +197,125 @@
     padding: 0 10px;
   }
 }
+#mainClothes {
+  padding: 60px 0;
+}
+#mainClothes .mainClothes h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #72072D;
+}
+#mainClothes .mainClothes--group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+#mainClothes .mainClothes--group__block {
+  width: 230px;
+  height: 320px;
+  margin: 20px 20px;
+}
+#mainClothes .mainClothes--group__block div {
+  width: 100%;
+  height: 260px;
+  border: 1px solid rgba(0, 0, 0, 0.53);
+  border-radius: 5px;
+}
+#mainClothes .mainClothes--group__block div img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+}
+#mainClothes .mainClothes--group__block h3 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+  margin-top: 10px;
+}
+#mainClothes .mainClothes--group__block p {
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+}
+#mainClothes .mainClothes--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+#mainClothes .mainClothes--btn button {
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 1px solid #D118A8;
+  color: #D118A8;
+}
+
+@media (max-width: 700px) {
+  #mainClothes .mainClothes h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 550px) {
+  #mainClothes .mainClothes--group__block {
+    width: 160px;
+  }
+  #mainClothes .mainClothes--group__block h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 451px) {
+  #mainClothes .mainClothes--group__block {
+    width: 130px;
+    height: 260px;
+  }
+  #mainClothes .mainClothes--group__block div {
+    height: 200px;
+  }
+  #mainClothes .mainClothes--group__block div img {
+    height: 200px;
+  }
+  #mainClothes .mainClothes--group__block h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 376px) {
+  #mainClothes .mainClothes h1 {
+    font-size: 20px;
+  }
+  #mainClothes .mainClothes--group__block {
+    width: 100px;
+    height: 240px;
+  }
+  #mainClothes .mainClothes--group__block div {
+    height: 180px;
+  }
+  #mainClothes .mainClothes--group__block div img {
+    height: 180px;
+  }
+  #mainClothes .mainClothes--group__block h3 {
+    font-size: 17px;
+  }
+}
+@media (max-width: 320px) {
+  #mainClothes .mainClothes h1 {
+    font-size: 20px;
+  }
+  #mainClothes .mainClothes--group__block {
+    width: 90px;
+    height: 220px;
+  }
+  #mainClothes .mainClothes--group__block div {
+    height: 160px;
+  }
+  #mainClothes .mainClothes--group__block div img {
+    height: 160px;
+  }
+  #mainClothes .mainClothes--group__block h3 {
+    font-size: 17px;
+  }
+}
 #hero {
   display: flex;
   align-items: center;
@@ -214,11 +333,23 @@
 #hero .hero--cloth__text {
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
 }
 #hero .hero--cloth__text li {
   font-weight: 900;
   font-size: 24px;
   color: #FF005C;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+#hero .hero--cloth__text li div {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #FF005C;
+  margin-right: 8px;
 }
 
 @media (max-width: 1024px) {

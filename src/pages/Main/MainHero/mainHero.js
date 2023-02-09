@@ -11,13 +11,13 @@ const MainHero = () => {
                     <div className="hero--cloth"><h1>ОДЕЖДА ДЛЯ ВСЕЙ СЕМЬИ!</h1>
                         <div className="hero--cloth__text">
                             <ul><NavLink to={'/women'}>
-                                <li>Для женщин</li>
+                                <li><div></div> Для женщин</li>
                             </NavLink></ul>
                             <ul><NavLink to={'/man'}>
-                                <li>Для мужчин</li>
+                                <li><div></div> Для мужчин</li>
                             </NavLink></ul>
                             <ul><NavLink to={'/children'}>
-                                <li>Для детей</li>
+                                <li><div></div> Для детей</li>
                             </NavLink></ul>
                         </div>
                     </div>
