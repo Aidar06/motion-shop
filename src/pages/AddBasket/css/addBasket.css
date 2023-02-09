@@ -48,6 +48,7 @@
   padding-top: 50px;
 }
 #addBasket .addBasket--block__size {
+  width: 70%;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -68,8 +69,8 @@
   margin: 10px 0;
 }
 #addBasket .addBasket--block__color div {
-  width: 40px;
-  height: 60px;
+  width: 70px;
+  height: 90px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.73);
   cursor: pointer;

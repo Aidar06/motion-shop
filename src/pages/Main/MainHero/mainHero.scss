@@ -17,11 +17,22 @@
       &__text {
         display: flex;
         flex-direction: column;
-
+        margin-top: 40px;
         li {
           font-weight: 900;
           font-size: 24px;
           color: #FF005C;
+          list-style: none;
+          display: flex;
+          align-items: center;
+          margin: 10px 0;
+          div{
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #FF005C;
+            margin-right: 8px;
+          }
         }
       }
     }
