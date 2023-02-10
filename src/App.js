@@ -11,6 +11,9 @@ import WomanClothes from "./pages/WomanClothes/womanClothes";
 import ManClothes from "./pages/ManClothes/manClothes";
 import ChildrenClothes from "./pages/ChildrenCLothes/childrenClothes";
 import Shoe from "./pages/Shoe/shoe";
+import AddBasket from "./pages/AddBasket/addBasket";
+import Search from "./components/modalSearch/search";
+import BurgerMenu from "./components/BurgerMenu/burgerMenu";
 
 
 
@@ -20,6 +23,8 @@ function App() {
   return (
     <>
       <Header/>
+      <Search/>
+      <BurgerMenu/>
         <Routes>
             <Route path='/' element={<Main/>}/>
             <Route path='/basket' element={<Basket/>}/>
@@ -29,6 +34,7 @@ function App() {
             <Route path='/man' element={<ManClothes/>}/>
             <Route path='/children' element={<ChildrenClothes/>}/>
             <Route path='/shoe' element={<Shoe/>}/>
+            <Route path='/addBasket/:id' element={<AddBasket/>}/>
         </Routes>
       <Footer/>
     </>

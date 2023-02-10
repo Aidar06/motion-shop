@@ -1,0 +1,238 @@
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url("../../../assets/img/mainHeroBg.png"), no-repeat center/cover;
+
+  .hero {
+    &--cloth {
+      margin: 0 60px;
+
+      h1 {
+        font-weight: 900;
+        font-size: 48px;
+        color: #72072D;
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        li {
+          font-weight: 900;
+          font-size: 24px;
+          color: #FF005C;
+          list-style: none;
+          display: flex;
+          align-items: center;
+          margin: 10px 0;
+          div{
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #FF005C;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1024px) {
+  #hero {
+    .hero {
+      &--cloth {
+        h1 {
+          font-size: 26px;
+        }
+
+        &__text {
+          li {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #hero {
+    background: transparent;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #hero {
+    img{
+      margin-top: 30px;
+    }
+    .hero {
+      &--cloth {
+        h1 {
+          font-size: 35px;
+          text-align: center;
+          padding-top: 20px;
+        }
+
+        &__text {
+          display: flex;
+          flex-direction: inherit;
+          justify-content: center;
+
+          li {
+            font-size: 19px;
+            margin: 10px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    background: transparent;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #hero {
+    .hero {
+      &--cloth {
+        h1 {
+          font-size: 35px;
+        }
+
+        &__text {
+          display: flex;
+          flex-direction: inherit;
+
+          li {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #hero {
+    .hero {
+      &--cloth {
+        h1 {
+          font-size: 24px;
+        }
+
+        &__text {
+          li {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  #hero {
+    .hero {
+      &--cloth {
+        h1 {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+  #hero {
+    .hero {
+      &--cloth {
+        &__text {
+          li {
+            font-size: 8px;
+            margin: 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #hero {
+    .hero {
+      &--cloth {
+        &__text {
+          li {
+            font-size: 6px;
+            margin: 0 0;
+          }
+        }
+      }
+    }
+  }
+  #hero {
+    .hero {
+      &--cloth {
+        h1 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  #hero {
+    img {
+      width: 100%;
+    }
+
+    .hero {
+      &--cloth {
+        h1 {
+          font-size: 13px;
+        }
+
+        &__text {
+          li {
+            font-size: 4px;
+            margin: 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #hero {
+    img {
+      width: 100%;
+    }
+
+    .hero {
+      &--cloth {
+        h1 {
+          font-size: 10px;
+          text-align: center;
+        }
+
+        &__text {
+          li {
+            font-size: 2px;
+            margin: 0 0;
+          }
+        }
+      }
+    }
+  }
+}

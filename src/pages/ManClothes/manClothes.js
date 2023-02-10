@@ -50,6 +50,9 @@ const ManClothes = () => {
                 </div>
             </div>
         </section>
+        <div>
+            
+        </div>
     );
 };
 

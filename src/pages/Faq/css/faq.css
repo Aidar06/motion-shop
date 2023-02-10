@@ -1,53 +1,32 @@
 #accordion {
   margin: 50px 0;
-
-  .container {
-    .accordion {
-      &--text-h1 {
-        font-weight: 700;
-        font-size: 40px;
-        color: #72072D;
-        padding: 20px 0;
-      }
-
-      hr {
-        border: 1px solid #72072D;
-      }
-
-      .accordion-text {
-        summary {
-          display: flex;
-          align-items: center;
-          height: 80px;
-          justify-content: space-between;
-          cursor: pointer;
-
-          p {
-            font-size: 60px;
-            color: #72072D;
-            //margin-right: 30px;
-          }
-        }
-
-        p {
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 19px;
-          color: #72072D;
-          padding: 20px 0;
-
-        }
-      }
-    }
-  }
 }
-
-@media (max-width: 1440px) {
-
+#accordion .container .accordion--text-h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #72072D;
+  padding: 20px 0;
 }
-
-@media (max-width: 1200px) {
-
+#accordion .container .accordion hr {
+  border: 1px solid #72072D;
+}
+#accordion .container .accordion .accordion-text summary {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#accordion .container .accordion .accordion-text summary p {
+  font-size: 60px;
+  color: #72072D;
+}
+#accordion .container .accordion .accordion-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #72072D;
+  padding: 20px 0;
 }
 
 @media (max-width: 768px) {
@@ -55,7 +34,6 @@
     font-size: 32px;
   }
 }
-
 @media (max-width: 576px) {
   #accordion .container .accordion--text-h1 {
     font-size: 24px;
@@ -67,7 +45,6 @@
     font-size: 26px;
   }
 }
-
 @media (max-width: 451px) {
   #accordion .container .accordion--text-h1 {
     font-size: 19px;
@@ -78,9 +55,7 @@
   #accordion .container .accordion .accordion-text summary p {
     font-size: 44px;
   }
-
 }
-
 @media (max-width: 400px) {
   #accordion .container .accordion--text-h1 {
     font-size: 17px;
@@ -95,7 +70,6 @@
     height: 59px;
   }
 }
-
 @media (max-width: 376px) {
   #accordion .container .accordion--text-h1 {
     font-size: 16px;
@@ -107,7 +81,6 @@
     height: 53px;
   }
 }
-
 @media (max-width: 320px) {
   #accordion .container .accordion--text-h1 {
     font-size: 13px;
@@ -122,3 +95,5 @@
     height: 43px;
   }
 }
+
+/*# sourceMappingURL=faq.css.map */

@@ -1,49 +1,59 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {BsSearch, BsQuestionCircle} from "react-icons/bs";
 import {HiOutlineClipboardDocumentList} from "react-icons/hi2";
 import {AiOutlineShoppingCart} from "react-icons/ai";
 // import {RxHamburgerMenu} from "react-icons/rx";
 import {NavLink} from "react-router-dom";
+import Search from "../modalSearch/search";
+import BurgerMenu from "../BurgerMenu/burgerMenu";
+import {BiMenuAltLeft} from "react-icons/bi";
 
 
 const Header = () => {
+
+    const [search, setSearch] = useState(false)
+    const [burger, setBurger] = useState(false)
+
     return (
-         <header id="header">
+        <header id="header">
+            <Search search={search}/>
+            <BurgerMenu burger={burger} setBurger={setBurger}/>
             <div className="container">
-                <div className="header">
-
-                     <NavLink to={"/"}><h1>MOTION SHOP</h1></NavLink>
-                     <div className="header--search">
-                         <input type="text" placeholder="Я ищу..."/>
-                         <BsSearch className='BsSearch'/>
-                     </div>
-
-                     <form action="" className="search-form">
-                         <input type="search" name="" placeholder="search here..." id="search-box"/>
-                     </form>
-
-                     <form action="" className="header--search-form">
-                         <input type="search" name="" placeholder="Я ищу..." id="search-box" className="header--form__box"/>
-                     </form>
-
-                     <nav className="header--nav">
-                         <div className="header--nav__faq">
-                             <BsQuestionCircle className="BsQuestionCircle"/>
-                             <NavLink to={"/faq"}>FAQ</NavLink>
-                         </div>
-                         <div className="header--nav__about">
-                             <HiOutlineClipboardDocumentList className="HiOutlineClipboardDocumentList"/>
-                             <NavLink to={"/aboutUs"}>О нас</NavLink>
-                         </div>
-                         <div className="header--nav__shop">
-                             <AiOutlineShoppingCart className="AiOutlineShoppingCart"/>
-                             <NavLink to={"/basket"}>Корзина</NavLink>
-                         </div>
+                <div className="navbar">
+                    <BiMenuAltLeft className='navbar--icon' onClick={() => setBurger(true)}/>
+                    <NavLink to={'/'}>
+                        <h1>MOTION <span>SHOP</span></h1>
+                    </NavLink>
+                    <div className='navbar--search'>
+                        <input type="text"/>
+                        <BsSearch className='navbar--search__icon'/>
+                    </div>
+                    <nav className='navbar--nav'>
+                        <NavLink to={'/faq'}>
+                            <div className='navbar--nav__block'>
+                                <BsQuestionCircle className='navbar--nav__block--icon'/>
+                                <h3>FAQ</h3>
+                            </div>
+                        </NavLink>
+                        <NavLink to={'/aboutUs'}>
+                            <div className='navbar--nav__block'>
+                                <HiOutlineClipboardDocumentList className='navbar--nav__block--icon'/>
+                                <h3>О нас</h3>
+                            </div>
+                        </NavLink>
+                        <NavLink to={'/basket'}>
+                            <div className='navbar--nav__block'>
+                                <AiOutlineShoppingCart className='navbar--nav__block--icon'/>
+                                <h3>Корзина</h3>
+                            </div>
+                        </NavLink>
                     </nav>
+                    <div className='navbar--nav__block searchRel' onClick={() => setSearch(!search)}>
+                        <BsSearch className='navbar--nav__block--icon'/>
+                    </div>
                 </div>
             </div>
         </header>
-
     );
 };
 
