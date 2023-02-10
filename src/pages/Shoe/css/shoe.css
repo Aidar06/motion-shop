@@ -1,0 +1,106 @@
+#shoeClothes {
+  padding: 50px 0;
+}
+#shoeClothes .shoeClothes--shoeText {
+  display: none;
+}
+#shoeClothes .shoeClothes--category {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+#shoeClothes .shoeClothes--category .own {
+  background: url("./../../assets/img/man.png") no-repeat center/cover;
+}
+#shoeClothes .shoeClothes--category .own:hover {
+  height: 300px;
+}
+#shoeClothes .shoeClothes--category .two {
+  background: url("./../../assets/img/woman.png") no-repeat center/cover;
+}
+#shoeClothes .shoeClothes--category .two:hover {
+  height: 300px;
+}
+#shoeClothes .shoeClothes--category .three {
+  background: url("./../../assets/img/child.png") no-repeat center/cover;
+}
+#shoeClothes .shoeClothes--category .three:hover {
+  height: 300px;
+}
+#shoeClothes .shoeClothes--category .four {
+  background: url("./../../assets/img/shoe.png") no-repeat center/cover;
+}
+#shoeClothes .shoeClothes--category__block {
+  width: 22.7%;
+  height: 100px;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+#shoeClothes .shoeClothes--category__block--bg {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(1.08deg, #72072D 0.83%, rgba(196, 196, 196, 0) 94.44%);
+  display: flex;
+  color: #FFFFFF;
+  position: relative;
+}
+#shoeClothes .shoeClothes--category__block--bg__text {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+  color: #FFFFFF;
+}
+#shoeClothes .shoeClothes--category__block--bg__text--icon {
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+@media (max-width: 1100px) {
+  #shoeClothes .shoeClothes h1 {
+    font-size: 18px;
+  }
+  #shoeClothes .shoeClothes--category {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #shoeClothes .shoeClothes--category__block {
+    margin: 20px 0;
+    width: 20%;
+    height: 300px;
+  }
+  #shoeClothes .shoeClothes--category__block--bg__text--icon {
+    font-size: 25.5px;
+  }
+}
+@media (max-width: 780px) {
+  #shoeClothes .shoeClothes--shoeText {
+    font-weight: 700;
+    font-size: 35px;
+    color: #72072D;
+    display: block;
+  }
+  #shoeClothes .shoeClothes--category {
+    display: none;
+  }
+}
+@media (max-width: 470px) {
+  #shoeClothes .shoeClothes--shoeText {
+    font-weight: 700;
+    font-size: 28px;
+    color: #72072D;
+    display: block;
+  }
+}
+@media (max-width: 375px) {
+  #shoeClothes .shoeClothes--shoeText {
+    font-weight: 700;
+    font-size: 28px;
+    color: #72072D;
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=shoe.css.map */

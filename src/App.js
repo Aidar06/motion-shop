@@ -16,6 +16,9 @@ import Search from "./components/modalSearch/search";
 import BurgerMenu from "./components/BurgerMenu/burgerMenu";
 
 
+
+
+
 function App() {
   return (
     <>
@@ -28,7 +31,7 @@ function App() {
             <Route path='/faq' element={<Faq/>}/>
             <Route path='/aboutUs' element={<AboutUs/>}/>
             <Route path='/woman' element={<WomanClothes/>}/>
-            <Route path='/men' element={<ManClothes/>}/>
+            <Route path='/man' element={<ManClothes/>}/>
             <Route path='/children' element={<ChildrenClothes/>}/>
             <Route path='/shoe' element={<Shoe/>}/>
             <Route path='/addBasket/:id' element={<AddBasket/>}/>
@@ -39,3 +42,5 @@ function App() {
 }
 
 export default App;
+
+

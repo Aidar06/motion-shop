@@ -9,6 +9,7 @@ import {NavLink} from "react-router-dom";
 
 
 const MainCategory = () => {
+
     return (
         <>
             <section id="category">
@@ -26,7 +27,6 @@ const MainCategory = () => {
                                         <img className="category--block__man--one__pink" src={pink} alt="img"/>
                                         <p>Мужская</p>
                                         <BsArrowRight className="category--block__man--one__icon"/>
-
                                     </div>
 
                                 </div>
@@ -44,7 +44,7 @@ const MainCategory = () => {
                             </NavLink>
 
 
-                            <NavLink to={"/child"}>
+                            <NavLink to={"/children"}>
                                 <div className="category--block__child">
                                     <img className="category--block__bg3" src={child} alt="img"/>
                                     <div className="category--block__child--three">
