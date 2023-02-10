@@ -61,6 +61,22 @@
 #header .navbar .searchRel {
   display: none;
 }
+#header .headerUp {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270.73deg, #FF005C 0.7%, #72072D 89.36%);
+}
+#header .headerUp--icon {
+  font-size: 26px;
+  color: white;
+}
 
 .search-block {
   width: 100%;

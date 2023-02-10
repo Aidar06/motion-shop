@@ -14,6 +14,7 @@ import Shoe from "./pages/Shoe/shoe";
 import AddBasket from "./pages/AddBasket/addBasket";
 import Search from "./components/modalSearch/search";
 import BurgerMenu from "./components/BurgerMenu/burgerMenu";
+import AddShoe from "./pages/AddShoe/addShoe";
 
 
 
@@ -35,6 +36,7 @@ function App() {
             <Route path='/children' element={<ChildrenClothes/>}/>
             <Route path='/shoe' element={<Shoe/>}/>
             <Route path='/addBasket/:id' element={<AddBasket/>}/>
+            <Route path='/addShoe/:id' element={<AddShoe/>}/>
         </Routes>
       <Footer/>
     </>

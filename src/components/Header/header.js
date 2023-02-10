@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {BsSearch, BsQuestionCircle} from "react-icons/bs";
+import {BsSearch, BsQuestionCircle, BsArrowUp} from "react-icons/bs";
 import {HiOutlineClipboardDocumentList} from "react-icons/hi2";
 import {AiOutlineShoppingCart} from "react-icons/ai";
 // import {RxHamburgerMenu} from "react-icons/rx";
@@ -13,6 +13,13 @@ const Header = () => {
 
     const [search, setSearch] = useState(false)
     const [burger, setBurger] = useState(false)
+
+    const scrollTo =() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
 
     return (
         <header id="header">
@@ -52,6 +59,9 @@ const Header = () => {
                         <BsSearch className='navbar--nav__block--icon'/>
                     </div>
                 </div>
+            </div>
+            <div className='headerUp' onClick={scrollTo}>
+                <BsArrowUp className='headerUp--icon'/>
             </div>
         </header>
     );
