@@ -250,6 +250,7 @@
   border-radius: 20px;
   border: 1px solid #D118A8;
   color: #D118A8;
+  background: transparent;
 }
 
 @media (max-width: 700px) {
@@ -452,3 +453,5 @@
     margin: 0 0;
   }
 }
+
+/*# sourceMappingURL=mainStyle.css.map */

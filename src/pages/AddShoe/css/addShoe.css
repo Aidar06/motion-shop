@@ -1,35 +1,35 @@
-#addBasket {
+#addShoe {
   width: 100%;
   padding: 50px 0;
 }
-#addBasket .addBasket {
+#addShoe .addShoe {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 700px;
 }
-#addBasket .addBasket--img {
+#addShoe .addShoe--img {
   width: 40%;
   height: 100%;
 }
-#addBasket .addBasket--img img {
+#addShoe .addShoe--img img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-#addBasket .addBasket--block {
+#addShoe .addShoe--block {
   width: 55%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#addBasket .addBasket--block h1 {
+#addShoe .addShoe--block h1 {
   font-weight: 400;
   font-size: 36px;
   color: #434343;
 }
-#addBasket .addBasket--block h2 {
+#addShoe .addShoe--block h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 54px;
@@ -38,22 +38,22 @@
   color: transparent;
   margin-top: 10px;
 }
-#addBasket .addBasket--block h5 {
+#addShoe .addShoe--block h5 {
   font-weight: 300;
   font-size: 13px;
   color: #000000;
   margin-top: 20px;
 }
-#addBasket .addBasket--block__col {
+#addShoe .addShoe--block__col {
   padding-top: 50px;
 }
-#addBasket .addBasket--block__size {
+#addShoe .addShoe--block__size {
   width: 70%;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
-#addBasket .addBasket--block__size div {
+#addShoe .addShoe--block__size div {
   cursor: pointer;
   width: 70px;
   height: 40px;
@@ -64,38 +64,38 @@
   color: rgba(0, 0, 0, 0.82);
   border-radius: 10px;
 }
-#addBasket .addBasket--block__color {
+#addShoe .addShoe--block__color {
   display: flex;
   margin: 10px 0;
 }
-#addBasket .addBasket--block__color div {
+#addShoe .addShoe--block__color div {
   width: 70px;
   height: 90px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.73);
   cursor: pointer;
 }
-#addBasket .addBasket--block__color--one {
+#addShoe .addShoe--block__color--one {
   background: black;
 }
-#addBasket .addBasket--block__color--two {
+#addShoe .addShoe--block__color--two {
   background: red;
   margin-left: 10px;
 }
-#addBasket .addBasket--block__color--three {
+#addShoe .addShoe--block__color--three {
   background: #413d3d;
   margin-left: 10px;
 }
-#addBasket .addBasket--block__color--fore {
+#addShoe .addShoe--block__color--fore {
   background: blue;
   margin-left: 10px;
 }
-#addBasket .addBasket--block__btn {
+#addShoe .addShoe--block__btn {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-#addBasket .addBasket--block__btn button {
+#addShoe .addShoe--block__btn button {
   margin: 10px 0;
   width: 40%;
   height: 50px;
@@ -105,7 +105,7 @@
   border: none;
   transition: 0.4s;
 }
-#addBasket .addBasket--block__btn button:hover {
+#addShoe .addShoe--block__btn button:hover {
   transition: 0.4s;
   transform: scale(1.1);
   background: linear-gradient(270deg, #FF005C 0%, #72072D 100%);
@@ -113,15 +113,15 @@
   color: transparent;
   border: 2px solid #72072D;
 }
-#addBasket .addBasketDis {
+#addShoe .addShoeDis {
   padding: 40px 0;
 }
-#addBasket .addBasketDis h1 {
+#addShoe .addShoeDis h1 {
   font-weight: 700;
   font-size: 36px;
   color: #000000;
 }
-#addBasket .addBasketDis p {
+#addShoe .addShoeDis p {
   font-weight: 400;
   font-size: 20px;
   margin-top: 30px;
@@ -129,174 +129,174 @@
 }
 
 @media (max-width: 1024px) {
-  #addBasket {
+  #addShoe {
     padding: 0;
   }
 }
 @media (max-width: 768px) {
-  #addBasket .addBasket {
+  #addShoe .addShoe {
     height: 950px;
     flex-direction: column;
   }
-  #addBasket .addBasket--block {
+  #addShoe .addShoe--block {
     text-align: center;
     width: 80%;
   }
-  #addBasket .addBasket--block h1 {
+  #addShoe .addShoe--block h1 {
     align-items: center;
   }
-  #addBasket .addBasket--block__col {
+  #addShoe .addShoe--block__col {
     margin-top: 0;
   }
-  #addBasket .addBasket--block__size {
+  #addShoe .addShoe--block__size {
     width: 100%;
   }
-  #addBasket .addBasket--block__color {
+  #addShoe .addShoe--block__color {
     justify-content: center;
   }
-  #addBasket .addBasket--block__btn {
+  #addShoe .addShoe--block__btn {
     flex-direction: row;
     justify-content: center;
     margin-top: 20px;
   }
-  #addBasket .addBasket--block__btn button {
+  #addShoe .addShoe--block__btn button {
     margin: 0 10px;
   }
-  #addBasket .addBasketDis p {
+  #addShoe .addShoeDis p {
     text-align: center;
   }
 }
 @media (max-width: 610px) {
-  #addBasket .addBasket {
+  #addShoe .addShoe {
     height: 950px;
     flex-direction: column;
   }
-  #addBasket .addBasket--block {
+  #addShoe .addShoe--block {
     text-align: center;
     width: 80%;
   }
-  #addBasket .addBasket--block h1 {
+  #addShoe .addShoe--block h1 {
     align-items: center;
   }
-  #addBasket .addBasket--block__col {
+  #addShoe .addShoe--block__col {
     margin-top: 0;
   }
-  #addBasket .addBasket--block__size {
+  #addShoe .addShoe--block__size {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     overflow: scroll;
   }
-  #addBasket .addBasket--block__size--xs {
+  #addShoe .addShoe--block__size--xs {
     margin: 10px 0;
   }
-  #addBasket .addBasket--block__color {
+  #addShoe .addShoe--block__color {
     justify-content: center;
   }
-  #addBasket .addBasket--block__btn {
+  #addShoe .addShoe--block__btn {
     flex-direction: row;
     justify-content: center;
     margin-top: 20px;
   }
-  #addBasket .addBasket--block__btn button {
+  #addShoe .addShoe--block__btn button {
     margin: 0 10px;
   }
-  #addBasket .addBasketDis p {
+  #addShoe .addShoeDis p {
     text-align: center;
   }
 }
 @media (max-width: 455px) {
-  #addBasket .addBasket {
+  #addShoe .addShoe {
     height: 950px;
     flex-direction: column;
   }
-  #addBasket .addBasket--block {
+  #addShoe .addShoe--block {
     text-align: center;
     width: 80%;
   }
-  #addBasket .addBasket--block h1 {
+  #addShoe .addShoe--block h1 {
     align-items: center;
   }
-  #addBasket .addBasket--block__col {
+  #addShoe .addShoe--block__col {
     margin-top: 0;
   }
-  #addBasket .addBasket--block__size {
+  #addShoe .addShoe--block__size {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     overflow: scroll;
   }
-  #addBasket .addBasket--block__size--ss {
+  #addShoe .addShoe--block__size--ss {
     margin: 10px 0;
   }
-  #addBasket .addBasket--block__size--xs {
+  #addShoe .addShoe--block__size--xs {
     margin: 10px 0;
   }
-  #addBasket .addBasket--block__color {
+  #addShoe .addShoe--block__color {
     justify-content: center;
   }
-  #addBasket .addBasket--block__btn {
+  #addShoe .addShoe--block__btn {
     flex-direction: row;
     justify-content: center;
     margin-top: 20px;
   }
-  #addBasket .addBasket--block__btn button {
+  #addShoe .addShoe--block__btn button {
     margin: 0 10px;
   }
-  #addBasket .addBasketDis p {
+  #addShoe .addShoeDis p {
     text-align: center;
   }
 }
 @media (max-width: 410px) {
-  #addBasket .addBasket {
+  #addShoe .addShoe {
     height: 950px;
     flex-direction: column;
   }
-  #addBasket .addBasket--block {
+  #addShoe .addShoe--block {
     text-align: center;
     width: 80%;
   }
-  #addBasket .addBasket--block h1 {
+  #addShoe .addShoe--block h1 {
     align-items: center;
   }
-  #addBasket .addBasket--block__col {
+  #addShoe .addShoe--block__col {
     margin-top: 0;
   }
-  #addBasket .addBasket--block__size {
+  #addShoe .addShoe--block__size {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     overflow: scroll;
   }
-  #addBasket .addBasket--block__size--xl {
+  #addShoe .addShoe--block__size--xl {
     margin: 0 1px;
   }
-  #addBasket .addBasket--block__size--xxl {
+  #addShoe .addShoe--block__size--xxl {
     margin: 0 1px;
   }
-  #addBasket .addBasket--block__size--cc {
+  #addShoe .addShoe--block__size--cc {
     margin: 10px 0;
   }
-  #addBasket .addBasket--block__size--ss {
+  #addShoe .addShoe--block__size--ss {
     margin: 10px 0;
   }
-  #addBasket .addBasket--block__size--xs {
+  #addShoe .addShoe--block__size--xs {
     margin: 10px 0;
   }
-  #addBasket .addBasket--block__color {
+  #addShoe .addShoe--block__color {
     justify-content: center;
   }
-  #addBasket .addBasket--block__btn {
+  #addShoe .addShoe--block__btn {
     flex-direction: row;
     justify-content: center;
     margin-top: 20px;
   }
-  #addBasket .addBasket--block__btn button {
+  #addShoe .addShoe--block__btn button {
     margin: 0 10px;
   }
-  #addBasket .addBasketDis p {
+  #addShoe .addShoeDis p {
     text-align: center;
   }
 }
 
-/*# sourceMappingURL=addBasket.css.map */
+/*# sourceMappingURL=addShoe.css.map */
