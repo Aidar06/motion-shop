@@ -2,7 +2,7 @@ import React from 'react';
 import {BsSearch, BsQuestionCircle} from "react-icons/bs";
 import {HiOutlineClipboardDocumentList} from "react-icons/hi2";
 import {AiOutlineShoppingCart} from "react-icons/ai";
-import {RxHamburgerMenu} from "react-icons/rx";
+// import {RxHamburgerMenu} from "react-icons/rx";
 import {NavLink} from "react-router-dom";
 
 

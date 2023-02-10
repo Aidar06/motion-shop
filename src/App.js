@@ -13,6 +13,9 @@ import ChildrenClothes from "./pages/ChildrenCLothes/childrenClothes";
 import Shoe from "./pages/Shoe/shoe";
 
 
+
+
+
 function App() {
   return (
     <>
@@ -23,7 +26,7 @@ function App() {
             <Route path='/faq' element={<Faq/>}/>
             <Route path='/aboutUs' element={<AboutUs/>}/>
             <Route path='/woman' element={<WomanClothes/>}/>
-            <Route path='/men' element={<ManClothes/>}/>
+            <Route path='/man' element={<ManClothes/>}/>
             <Route path='/children' element={<ChildrenClothes/>}/>
             <Route path='/shoe' element={<Shoe/>}/>
         </Routes>
@@ -33,3 +36,5 @@ function App() {
 }
 
 export default App;
+
+

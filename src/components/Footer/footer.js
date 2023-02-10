@@ -11,12 +11,12 @@ const Footer = () => {
                 <div className="footer">
                     <NavLink to={'/'}><h1>MOTION SHOP</h1></NavLink>
                     <div className='footer--links'>
-                        <NavLink to={'/women'}>Женщинам</NavLink>
+                        <NavLink to={'/woman'}>Женщинам</NavLink>
                         <NavLink to={'/man'} >Мужчинам</NavLink>
                         <NavLink to={'/children'}>Детям</NavLink>
                     </div>
                     <div className='footer--links'>
-                        <NavLink to={'/shew'}>Обувь</NavLink>
+                        <NavLink to={'/shoe'}>Обувь</NavLink>
                         <NavLink to={'/faq'}>FAQ</NavLink>
                         <NavLink to={'/aboutUs'}>О нас</NavLink>
                     </div>
