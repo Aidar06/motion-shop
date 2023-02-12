@@ -150,7 +150,7 @@ export let man = [
 
     {
         id: 22,
-        title: '',
+        title: 'куртка',
         img: 'https://sun9-77.userapi.com/impg/JvYDmeqJQFc82bUBX_6N4k4wQK7ycRZqgPVdOg/zAam4ecR5X4.jpg?size=320x320&quality=95&sign=11d85da20697d8d275cbdea35b5123cf&type=album',
         price: 2300,
     },
@@ -844,3 +844,5 @@ export let shew = [
 ]
 
 export let all = [...man,...woman,...children]
+
+export let allProMax = [...man,...woman,...children, ...shew]
