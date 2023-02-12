@@ -33,11 +33,15 @@
         border: 1px solid white;
         background: transparent;
         border-radius: 15px;
+        color: white;
+        font-size: 20px;
+        padding-left: 10px;
       }
       &__icon{
         font-size: 20px;
         position: absolute;
         right: 20px;
+        color: white;
       }
     }
     &--nav{
@@ -111,6 +115,7 @@
       font-size: 20px;
       position: absolute;
       right: 20px;
+      color: white;
     }
   }
 }

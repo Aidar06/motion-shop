@@ -54,7 +54,7 @@ const WomanClothes = () => {
                             </NavLink>
                         </div>
                     </div>
-                    <h1 className='womanClothes--title'>Мужская одежда</h1>
+                    <h1 className='womanClothes--title'>Женская одежда</h1>
                     <div className="womanClothes--group">
                         {
                             woman.slice(0,mere).map(el => {

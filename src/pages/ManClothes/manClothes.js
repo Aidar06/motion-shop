@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {HiArrowLongDown, HiArrowLongRight} from "react-icons/hi2";
 import {NavLink} from "react-router-dom";
-import {all, man} from "../../FackBackEnd/backEnd";
+import {man} from "../../FackBackEnd/backEnd";
 import {AiOutlineArrowDown} from "react-icons/ai";
 
 
