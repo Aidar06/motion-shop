@@ -27,22 +27,23 @@ const Footer = () => {
                         <a href="#">+996 222 533 735</a>
                         <div className='footer--contacts__icons'>
                             <div>
-                                <BsInstagram/>
+                                <a href="https://www.instagram.com/motion_web/"><BsInstagram/></a>
                             </div>
                             <div>
-                                <BsWhatsapp/>
+                                <a href="b24-pememt.bitrix24.site/crm_form_p2gyo"><BsWhatsapp/></a>
                             </div>
                             <div>
-                                <FaFacebookF/>
+                                <a href="#"><FaFacebookF/></a>
                             </div>
                             <div>
-                                <FaTelegramPlane/>
+                                <a href="#"><FaTelegramPlane/></a>
                             </div>
                         </div>
                     </div>
                     <div className='footer--address'>
                         <h2>Адрес</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius in dolor viverra feugiat neque, sed in. Mattis volutpat malesuada velit parturient aliquam, est. Mauris vitae velit laoreet faucibus nec amet velit.</p>
+                        <p>Турусбекова 109/3 Бишкек, 720001.</p>
+                        <p>Motion Web IT Academy</p>
                     </div>
                 </div>
 

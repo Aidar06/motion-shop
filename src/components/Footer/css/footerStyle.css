@@ -54,6 +54,8 @@
   height: 25px;
   border-radius: 5px;
   background: white;
+}
+#footer .footer--contacts__icons div a {
   color: #FF005C;
 }
 #footer .footer--address {

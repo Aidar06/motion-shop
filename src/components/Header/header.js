@@ -1,18 +1,20 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {BsSearch, BsQuestionCircle, BsArrowUp} from "react-icons/bs";
 import {HiOutlineClipboardDocumentList} from "react-icons/hi2";
 import {AiOutlineShoppingCart} from "react-icons/ai";
-// import {RxHamburgerMenu} from "react-icons/rx";
 import {NavLink} from "react-router-dom";
 import Search from "../modalSearch/search";
 import BurgerMenu from "../BurgerMenu/burgerMenu";
 import {BiMenuAltLeft} from "react-icons/bi";
+import Searcher from "../../pages/Searcher/searcher";
 
 
 const Header = () => {
 
     const [search, setSearch] = useState(false)
     const [burger, setBurger] = useState(false)
+    const [input, setInput] = useState('')
+
 
     const scrollTo =() => {
         window.scrollTo({
@@ -20,6 +22,17 @@ const Header = () => {
             behavior: 'smooth'
         })
     }
+
+    let textInput = React.createRef()
+
+    const showInput =()=> {
+        setInput(textInput.current.value)
+    }
+
+    useEffect(()=> {
+        localStorage.setItem('text',JSON.stringify(input))
+    }, [input])
+
 
     return (
         <header id="header">
@@ -32,8 +45,10 @@ const Header = () => {
                         <h1>MOTION <span>SHOP</span></h1>
                     </NavLink>
                     <div className='navbar--search'>
-                        <input type="text"/>
-                        <BsSearch className='navbar--search__icon'/>
+                        <input onInput={showInput} ref={textInput} type="text"/>
+                        <NavLink className='navbar--search__icon' to={'/searcher'}>
+                            <BsSearch/>
+                        </NavLink>
                     </div>
                     <nav className='navbar--nav'>
                         <NavLink to={'/faq'}>
@@ -66,5 +81,7 @@ const Header = () => {
         </header>
     );
 };
+
+
 
 export default Header;
