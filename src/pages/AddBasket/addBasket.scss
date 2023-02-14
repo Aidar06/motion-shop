@@ -47,6 +47,9 @@
         font-size: 13px;
         color: #000000;
         margin-top: 20px;
+        span{
+          font-size: 17px;
+        }
       }
 
       &__col {
@@ -66,7 +69,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          border: 1px solid rgba(0, 0, 0, 0.82);
+          border: 2px solid rgba(0, 0, 0, 0.82);
           color: rgba(0, 0, 0, 0.82);
           border-radius: 10px;
         }
@@ -80,7 +83,7 @@
           width: 70px;
           height: 90px;
           border-radius: 5px;
-          border: 1px solid rgba(0, 0, 0, 0.73);
+          border: 2px solid rgba(0, 0, 0, 0.73);
           cursor: pointer;
         }
 
@@ -108,7 +111,12 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-
+        &--link{
+          width: 100%;
+          button{
+            width: 100%;
+          }
+        }
         button {
           margin: 10px 0;
           width: 40%;

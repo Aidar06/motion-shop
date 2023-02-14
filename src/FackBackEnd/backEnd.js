@@ -843,6 +843,6 @@ export let shew = [
     },
 ]
 
-export let all = [...man,...woman,...children]
+export let all = [...man,...woman,...children,...shew]
 
 export let allProMax = [...man,...woman,...children, ...shew]
