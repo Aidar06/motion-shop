@@ -61,7 +61,7 @@ const Shoe = () => {
                         {
                             shew.slice(0,mere).map(el => {
                                 return(
-                                    <NavLink to={`/addShoe/${el.id}`} key={el.id}>
+                                    <NavLink to={`/addBasket/${el.id}`} key={el.id}>
                                         <div className='shoeClothes--group__block'>
                                             <div>
                                                 <img src={el.img} alt=""/>
