@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {NavLink} from "react-router-dom";
 
 const Basket = () => {
 
@@ -122,7 +123,9 @@ const Basket = () => {
                                 return(
                                     <div onMouseMove={() => setNum(el.id)} className='basket--group__cloth' key={el.id}>
                                                   <div className='basket--group__cloth--img'>
-                                                      <img src={el.img} alt=""/>
+                                                      <NavLink to={`/addBasket/${el.clothId}`}>
+                                                          <img src={el.img} alt=""/>
+                                                      </NavLink>
                                                   </div>
                                                   <div className='basket--group__cloth--info'>
                                                       <h1>{el.title}</h1>
