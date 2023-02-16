@@ -684,7 +684,7 @@ export let shew = [
 
     {
         id: 98,
-        title: 'кептич',
+        title: 'кепич',
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8p4dmurv2d13CjlMFwRfIidqqeRdNoX_BCQ&usqp=CAU',
         price: 80922,
     },
