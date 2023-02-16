@@ -167,7 +167,11 @@
       height: 520px;
       overflow: scroll;
       &::-webkit-scrollbar{
-        display: none;
+        width: 10px;
+      }
+      &::-webkit-scrollbar-thumb{
+        background: #FF005C;
+        border-radius: 5px;
       }
       &__cloth{
         width: 100%;
