@@ -16,7 +16,7 @@ const Header = () => {
     const [input, setInput] = useState('')
 
 
-    const scrollTo =() => {
+    const scrollTo = () => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
@@ -25,12 +25,12 @@ const Header = () => {
 
     let textInput = React.createRef()
 
-    const showInput =()=> {
+    const showInput = () => {
         setInput(textInput.current.value)
     }
 
-    useEffect(()=> {
-        localStorage.setItem('text',JSON.stringify(input))
+    useEffect(() => {
+        localStorage.setItem('text', JSON.stringify(input))
     }, [input])
 
 
@@ -81,7 +81,6 @@ const Header = () => {
         </header>
     );
 };
-
 
 
 export default Header;
