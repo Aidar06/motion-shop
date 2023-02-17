@@ -122,7 +122,7 @@ const Basket = () => {
                                 return(
                                     <div onMouseMove={() => setNum(el.id)} className='basket--group__cloth' key={el.id}>
                                                   <div className='basket--group__cloth--img'>
-                                                      <img src={el.img} alt=""/>
+                                                      <img src={el.img} alt="img"/>
                                                   </div>
                                                   <div className='basket--group__cloth--info'>
                                                       <h1>{el.title}</h1>
