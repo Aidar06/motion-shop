@@ -164,7 +164,11 @@
   }
 }
 
-
+@media (max-width: 576px) {
+  #category .category--block {
+    justify-content: center;
+  }
+}
 @media (max-width: 405px) {
   #category {
     .category {

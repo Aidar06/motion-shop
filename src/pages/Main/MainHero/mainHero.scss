@@ -18,15 +18,17 @@
         display: flex;
         flex-direction: column;
         margin-top: 40px;
-        li {
+
+        a {
           font-weight: 900;
           font-size: 24px;
           color: #FF005C;
           list-style: none;
           display: flex;
           align-items: center;
-          margin: 10px 0;
-          div{
+          margin: 5px 0;
+
+          div {
             width: 8px;
             height: 8px;
             border-radius: 50%;
@@ -72,9 +74,10 @@
     flex-direction: column-reverse;
   }
   #hero {
-    img{
+    img {
       margin-top: 30px;
     }
+
     .hero {
       &--cloth {
         h1 {
@@ -88,9 +91,8 @@
           flex-direction: inherit;
           justify-content: center;
 
-          li {
-            font-size: 19px;
-            margin: 10px 20px;
+          a {
+            margin: 5px 23px;
           }
         }
       }
@@ -115,8 +117,8 @@
           display: flex;
           flex-direction: inherit;
 
-          li {
-            font-size: 19px;
+          a {
+            margin: 5px 6px
           }
         }
       }
@@ -128,11 +130,15 @@
   #hero {
     .hero {
       &--cloth {
+        margin: 0 0;
+
         h1 {
           font-size: 27px;
         }
 
         &__text {
+          a {
+            margin: 5px 2px;
           li {
             font-size: 16px;
           }
@@ -142,8 +148,12 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 451px) {
   #hero {
+    img {
+      width: 100%;
+    }
+
     .hero {
       &--cloth {
         h1 {
@@ -156,9 +166,9 @@
     .hero {
       &--cloth {
         &__text {
-          li {
-            font-size: 8px;
-            margin: 0 0;
+          a {
+            margin: 5px 2px;
+            font-size: 18px;
           }
         }
       }
@@ -168,12 +178,16 @@
 
 @media (max-width: 400px) {
   #hero {
+    img {
+      width: 100%;
+    }
+
     .hero {
       &--cloth {
         &__text {
-          li {
-            font-size: 6px;
-            margin: 0 0;
+          a {
+            margin: 5px 2px;
+            font-size: 15px;
           }
         }
       }
@@ -183,14 +197,14 @@
     .hero {
       &--cloth {
         h1 {
-          font-size: 14px;
+          font-size: 24px;
         }
       }
     }
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   #hero {
     img {
       width: 100%;
@@ -199,17 +213,20 @@
     .hero {
       &--cloth {
         h1 {
-          font-size: 13px;
+          font-size: 23px;
         }
 
         &__text {
-          li {
-            font-size: 4px;
-            margin: 0 0;
+          a {
+            font-size: 15px;
           }
         }
       }
     }
+  }
+  #hero .hero--cloth__text a div {
+    width: 4px;
+    height: 5px;
   }
 }
 
@@ -222,14 +239,13 @@
     .hero {
       &--cloth {
         h1 {
-          font-size: 10px;
+          font-size: 18px;
           text-align: center;
         }
 
         &__text {
-          li {
-            font-size: 2px;
-            margin: 0 0;
+          a{
+            font-size: 12px;
           }
         }
       }
