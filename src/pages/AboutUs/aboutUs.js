@@ -32,10 +32,10 @@ const AboutUs = () => {
                                 <BsTelephone/>+996 312 90 30 30
                             </a>
                             <a href="tel:996"><BsTelephone/>+996 312 90 30 30</a>
-                            <a href="https://goo.gl/maps/XwvogKR9iFQUbYgo7" className="mail">
+                            <a href="#" className="mail">
                                 <FiMail fontSize="20px"/>Motionshop@gmail.com
                             </a>
-                            <a href="<https://goo.gl/maps/XwvogKR9iFQUbYgo7">
+                            <a href="https://goo.gl/maps/XwvogKR9iFQUbYgo7">
                                 <GrLocation fontSize="25px"/> Кыргызстан Бишкек/Турция Станбул.
                             </a>
                             <div className="about--about-one__about-two--about-icon">

@@ -294,6 +294,36 @@
 
     max-font-size: 17px;
 
+@media (max-width: 376px) {
+  .menu .burgerMenu--group h1 {
+    font-size: 35px;
+  }
+  .menu .burgerMenu--group__icon {
+    font-size: 49px;
+  }
+  .menu .burgerMenu--block {
+    font-size: 27px;
+  }
+  .menu .burgerMenu--block__icon {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 320px) {
+  .menu .burgerMenu--group h1 {
+    font-size: 28px;
+  }
+  .menu .burgerMenu--group__icon {
+    font-size: 39px;
+  }
+  .menu .burgerMenu--block {
+    font-size: 22px;
+    margin: 36px 0;
+  }
+  #header .navbar h1 {
+    font-size: 28px;
+  }
+}
     .burgerMenu {
       max-font-size: 17px;
       padding: 86px 0 0 0;
