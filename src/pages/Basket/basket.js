@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {NavLink} from "react-router-dom";
 
 const Basket = () => {
@@ -39,6 +39,7 @@ const Basket = () => {
         clothes = clothes.map(el => {
             if (el.id === num){
                 el.count += 1
+                el.price += el.firstPrice
                 n.push(el)
             }else{
                 n.push(el)
@@ -57,6 +58,7 @@ const Basket = () => {
         clothes = clothes.map(el => {
             if (el.id === num && el.count > 1){
                 el.count -= 1
+                el.price -= el.firstPrice
                 n.push(el)
             }else{
                 n.push(el)
@@ -68,12 +70,24 @@ const Basket = () => {
         apDate()
     }
 
+    let newMoney = 0
+    function gerMoneyCount(){
+        let clothes = JSON.parse(localStorage.getItem('clothes')) || []
+
+        clothes.map(el => {
+            newMoney += el.price
+        })
+    }
+
+    gerMoneyCount()
+
     return (
-        <section id='basket'>
+        <section id='basket'><h4>Оформление товара</h4>
             <div className="container">
                 <h1 className='basket-text' style={{display: check === false?'block':"none"}}>В корзине ничего не найдено!</h1>
                 <div className="basket" style={{display: check?'':"none"}}>
                     <div className="basket--block">
+
                         <div className="basket--block__group">
                             <div className="basket--block__group--input">
                                 <h2>Контакные данные</h2>
@@ -101,16 +115,19 @@ const Basket = () => {
                                 <h2>Оплата</h2>
                                 <div className="basket--block__group--pay__order">
                                     <input type="radio"/>
-                                    <p>Оплачу наличными при получении заказа</p>
+                                    <p>Оплачу наличными при получении <br/> заказа</p>
                                 </div>
-                                <p>Оплата с банковской картой через <span>PayBox</span></p>
+                                <div className="basket--block__group--pay__order">
+                                    <input type="radio"/>
+                                    <p>Оплата с банковской картой через <br/> <span>PayBox</span></p>
+                                </div>
                                 <button>Оплатить</button>
                             </div>
                             <div className="basket--block__group--payTwo">
                                 <div className="basket--block__group--payTwo__card">
                                     <div>
                                         <h5>Общая сумма:</h5>
-                                        <h4>3000 сом</h4>
+                                        <h4><span>{newMoney}</span> сом</h4>
                                     </div>
                                     <p>Ещё не оплачено</p>
                                 </div>
@@ -123,8 +140,7 @@ const Basket = () => {
                                 return(
                                     <div onMouseMove={() => setNum(el.id)} className='basket--group__cloth' key={el.id}>
                                                   <div className='basket--group__cloth--img'>
-                                                      <img src={el.img} alt="img"/>
-                                                      <NavLink to={`/addBasket/${el.clothId}`}>
+                                                      <NavLink to={`/addBasket/${el.clothId}`} key={el.clothId}>
                                                           <img src={el.img} alt=""/>
                                                       </NavLink>
                                                   </div>
