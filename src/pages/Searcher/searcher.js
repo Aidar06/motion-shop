@@ -5,9 +5,9 @@ import {NavLink} from "react-router-dom";
 const Searcher = () => {
 
     const [block, setBlock] = useState(true)
-   const [text, setText] = useState()
+    const [text, setText] = useState()
 
-    setInterval(()=> {
+    setInterval(() => {
         setText(JSON.parse(localStorage.getItem('text')))
     }, 1000)
 
@@ -28,17 +28,18 @@ const Searcher = () => {
     }, [text])
 
 
-
     return (
         <section id='searcher'>
             <div className="container">
                 <div className="searcher">
-                    <h1 style={{display: block ? 'block' : 'none'}} className='searcher--text'>По вашему запросу ничего не найдено</h1>
+                    <h1 style={{display: block ? 'block' : 'none'}} className='searcher--text'>
+                        По вашему запросу ничего не найдено
+                    </h1>
                     <div className="searcher--group">
                         {
                             allProMax.map(el => {
-                                if (el.title === text){
-                                    return(
+                                if (el.title === text) {
+                                    return (
                                         <NavLink to={`/addBasket/${el.id}`} key={el.id}>
                                             <div className='searcher--group__block'>
                                                 <div>
