@@ -23,7 +23,7 @@ export let man = [
     {
         id: 4,
         title: 'брюки',
-        img: 'https://bishberry.kg/components/com_jshopping/files/img_products/bryuki_ot_hudi_18_.webp',
+        img: 'https://discountmsk.ru/upload/iblock/b1d/bxkxx5ibh9e.jpg',
         price: 800,
     },
 
@@ -107,7 +107,7 @@ export let man = [
     {
         id: 16,
         title: 'брюки',
-        img: 'https://bishberry.kg/components/com_jshopping/files/img_products/thumb_MOO-Loose-Fit-Jogger-Harem-Pants-BMJH241-Men-Clothing-MOOS-5.webp',
+        img: 'https://pizhon.by/assets/cache_image/products/6961/bbdf6e332ac5fe2aa5ef923bc3385526_573x806_6a7.jpeg',
         price: 3000,
     },
 
@@ -636,7 +636,7 @@ export let shew = [
     {
         id: 91,
         title: 'кроссовки',
-        img: 'https://romer.ru/upload/medialibrary/84c/q03od1fn70z4z6hze9wd2ljp8vw2tli3.jpg',
+        img: 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/384215/04/sv01/fnd/RUS/w/1000/h/1000/fmt/png',
         price: 2100,
     },
 

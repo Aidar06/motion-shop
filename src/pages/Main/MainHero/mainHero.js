@@ -10,15 +10,18 @@ const MainHero = () => {
                 <div className="hero">
                     <div className="hero--cloth"><h1>ОДЕЖДА ДЛЯ ВСЕЙ СЕМЬИ!</h1>
                         <div className="hero--cloth__text">
-                            <ul><NavLink to={'/woman'}>
-                                <li><div></div> Для женщин</li>
-                            </NavLink></ul>
-                            <ul><NavLink to={'/man'}>
-                                <li><div></div> Для мужчин</li>
-                            </NavLink></ul>
-                            <ul><NavLink to={'/children'}>
-                                <li><div></div> Для детей</li>
-                            </NavLink></ul>
+                            <a><NavLink to={'/woman'}>
+                                <div></div>
+                                Для женщин
+                            </NavLink></a>
+                            <a><NavLink to={'/man'}>
+                                <div></div>
+                                Для мужчин
+                            </NavLink></a>
+                            <a><NavLink to={'/children'}>
+                                <div></div>
+                                Для детей
+                            </NavLink></a>
                         </div>
                     </div>
                 </div>
@@ -26,5 +29,4 @@ const MainHero = () => {
         </section>
     );
 };
-
 export default MainHero;
