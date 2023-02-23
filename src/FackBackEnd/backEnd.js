@@ -1,4 +1,4 @@
-export let man = [
+export let man =    [
     {
         id: 1,
         title: 'свитер',
@@ -23,7 +23,7 @@ export let man = [
     {
         id: 4,
         title: 'брюки',
-        img: 'https://bishberry.kg/components/com_jshopping/files/img_products/bryuki_ot_hudi_18_.webp',
+        img: 'https://media.gq-magazine.co.uk/photos/60f9a50fee3fa245febc7687/master/w_1920,h_1280,c_limit/Trousers_0000_Everlane.jpg',
         price: 800,
     },
 

@@ -1,32 +1,52 @@
-#basket{
+#basket {
   width: 100%;
-  padding: 80px 0;
-  .basket-text{
+  padding: 30px 0;
+  h4{
+    font-weight: 700;
+    font-size: 40px;
+    color: #72072D;
+    padding-bottom: 30px;
+    padding-left: 30px;
+  }
+  .basket-text {
     font-size: 40px;
     color: rgba(0, 0, 0, 0.66);
     text-align: center;
     padding: 200px 0;
   }
-  .basket{
+
+  .basket {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    &--block{
+
+    h4 {
+      font-weight: 700;
+      font-size: 40px;
+      color: #72072D;
+      padding: 10px 0;
+    }
+    &--block {
       width: 60%;
-      &__group{
+
+
+      &__group {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        &--input{
+
+        &--input {
           width: 50%;
-          h2{
+
+          h2 {
             font-weight: 700;
             font-size: 24px;
             color: #72072D;
           }
-          input{
+
+          input {
             background: transparent;
-            margin:10px 0;
+            margin: 10px 0;
             width: 70%;
             height: 40px;
             border: 2px solid #72072D;
@@ -34,33 +54,40 @@
             padding-left: 10px;
           }
         }
-        &--del{
+
+        &--del {
           width: 50%;
-          h2{
+
+          h2 {
             font-weight: 700;
             font-size: 24px;
             color: #72072D;
           }
-          p{
+
+          p {
             margin-top: 10px;
             font-weight: 300;
             font-size: 14px;
             color: rgba(0, 0, 0, 0.9);
           }
-          div{
+
+          div {
             display: flex;
             margin: 20px 0;
-            input{
+
+            input {
               background: #72072D;
             }
-            h5{
+
+            h5 {
               margin-left: 10px;
               font-weight: 600;
               font-size: 14px;
               color: rgba(114, 7, 45, 0.9);
             }
           }
-          &__ad{
+
+          &__ad {
             padding-left: 10px;
             width: 90%;
             height: 40%;
@@ -69,42 +96,40 @@
             color: #282c34;
           }
         }
-        &--pay{
+
+        &--pay {
           width: 50%;
           height: 130px;
           display: flex;
           flex-direction: column;
           justify-content: end;
-          margin-top: 100px;
-          h2{
+          margin-top: 130px;
+
+          h2 {
             font-weight: 700;
             font-size: 24px;
             color: #72072D;
+            //padding: 20px 0;
           }
-          &__order{
+
+          &__order {
             display: flex;
             align-items: center;
-            margin: 20px 0;
-            input{
+            margin: 10px 0;
+
+            input {
               background: #72072D;
 
             }
-            p{
+
+            p {
               font-weight: 600;
               font-size: 14px;
               margin-left: 10px;
               color: rgba(114, 7, 45, 0.9);
             }
           }
-          p{
-            font-weight: 600;
-            font-size: 14px;
-            color: rgba(114, 7, 45, 0.9);
-            span{
-              color: #70FF00;
-            }
-          }
-          button{
+          button {
             margin-top: 20px;
             padding: 10px 60px;
             width: 70%;
@@ -114,22 +139,25 @@
             font-size: 16px;
             border: none;
             color: #FFFFFF;
-            transition: .4s;
-            &:hover{
+            transition: .6s;
+
+            &:hover {
               background: transparent;
-              transform: scale(1.1);
+              color: #72072D;
               border: 1px solid #72072D;
             }
           }
         }
-        &--payTwo{
+
+        &--payTwo {
           width: 50%;
           height: 130px;
           display: flex;
           flex-direction: column;
           justify-content: end;
-          margin-top: 100px;
-          &__card{
+          margin-top: 130px;
+
+          &__card {
             background: #72072D;
             width: 95%;
             height: 70%;
@@ -137,90 +165,107 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            div{
-              width: 90%;
+
+            div {
+              width: 136%;
               display: flex;
               justify-content: space-around;
               align-items: center;
-              h5{
+
+              h5 {
                 font-weight: 400;
-                font-size: 10px;
+                font-size: 16px;
                 color: #FFFFFF;
               }
-              h4{
-                font-weight: 700;
-                font-size: 13px;
+
+              h4 {
+                font-weight: 750;
+                font-size: 16px;
                 color: #FFFFFF;
               }
             }
-            p{
+
+            p {
               font-weight: 400;
-              font-size: 10px;
+              font-size: 14px;
               color: #FFFFFF;
             }
           }
         }
       }
     }
-    &--group{
+
+    &--group {
       width: 35%;
       height: 520px;
       overflow: scroll;
-      &::-webkit-scrollbar{
+
+      &::-webkit-scrollbar {
         width: 10px;
       }
-      &::-webkit-scrollbar-thumb{
+
+      &::-webkit-scrollbar-thumb {
         background: #FF005C;
         border-radius: 5px;
       }
-      &__cloth{
+
+      &__cloth {
         width: 100%;
         height: 160px;
         display: flex;
         margin: 20px 0;
-        &--img{
+
+        &--img {
           width: 30%;
           height: 100%;
-          img{
+
+          img {
             width: 100%;
             height: 100%;
             object-fit: contain;
           }
         }
-        &--info{
+
+        &--info {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           margin-left: 20px;
-          h1{
+
+          h1 {
             font-weight: 400;
             font-size: 24px;
             color: #434343;
           }
-          h4{
+
+          h4 {
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
             color: rgba(0, 0, 0, 0.7);
-            span{
+
+            span {
               font-size: 20px;
               color: rgba(16, 15, 15, 0.89);
             }
           }
-          h2{
+
+          h2 {
             font-weight: 600;
             font-size: 15px;
             color: #FF005C;
           }
-          &__count{
+
+          &__count {
             cursor: pointer;
             display: flex;
             width: 80px;
             height: 20px;
             justify-content: space-between;
             align-items: center;
-            border: 1px solid  #DF0251;
-            div{
+            border: 1px solid #DF0251;
+
+            div {
               width: 20px;
               height: 20px;
               background: #DF0251;
@@ -230,7 +275,8 @@
               color: white;
             }
           }
-          h3{
+
+          h3 {
             cursor: pointer;
             font-weight: 600;
             font-size: 15px;
@@ -243,16 +289,16 @@
 }
 
 
-
-
 @media (max-width: 769px) {
-  #basket{
-    .basket{
+  #basket {
+    .basket {
       flex-direction: column;
-      &--block{
+
+      &--block {
         width: 100%;
       }
-      &--group{
+
+      &--group {
         width: 100%;
         height: 400px;
         margin-top: 30px;
@@ -263,43 +309,48 @@
 
 
 @media (max-width: 451px) {
- #basket{
-  .basket{
-    &--block{
-      &__group{
-        flex-direction: column;
-        &--input{
-          width: 100%;
-        }
-        &--del{
-          width: 100%;
-        }
-        &--pay{
-          width: 100%;
-          padding-top: 0;
-        }
-        &--payTwo{
-          width: 100%;
-          margin-top: 10px;
-          &--card{
-            height: 100%;
+  #basket {
+    .basket {
+      &--block {
+        &__group {
+          flex-direction: column;
+
+          &--input {
+            width: 100%;
+          }
+
+          &--del {
+            width: 100%;
+          }
+
+          &--pay {
+            width: 100%;
+            padding-top: 0;
+          }
+
+          &--payTwo {
+            width: 100%;
+            margin-top: 10px;
+
+            &--card {
+              height: 100%;
+            }
           }
         }
       }
     }
   }
- }
 }
 
 @media (max-width: 401px) {
-  #basket{
-    .basket{
-      &--group{
-          &__cloth{
-            &--img{
-              width: 40%;
-            }
+  #basket {
+    .basket {
+      &--group {
+        &__cloth {
+          &--img {
+            width: 40%;
           }
+        }
       }
     }
   }

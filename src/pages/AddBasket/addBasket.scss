@@ -1,13 +1,11 @@
 #addBasket {
   width: 100%;
   padding: 50px 0;
-
   .addBasket {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 700px;
-
     &--img {
       width: 40%;
       height: 100%;
@@ -18,7 +16,6 @@
         object-fit: contain;
       }
     }
-
     &--block {
       width: 55%;
       height: 100%;
@@ -113,6 +110,18 @@
         align-items: start;
         &--link{
           width: 100%;
+          display: flex;
+          align-items: center;
+          &__check{
+            div{
+              background:transparent;
+              border: 1px solid #FF005C;
+              color: #FF005C;
+              padding: 5px;
+              margin-left: 10px;
+              font-size: 13px;
+            }
+          }
           button{
             width: 100%;
           }
@@ -129,7 +138,6 @@
 
           &:hover {
             transition: .4s;
-            transform: scale(1.1);
             background: linear-gradient(270deg, #FF005C 0%, #72072D 100%);
             -webkit-background-clip: text;
             color: transparent;
