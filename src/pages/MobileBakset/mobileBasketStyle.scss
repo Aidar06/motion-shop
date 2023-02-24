@@ -1,0 +1,266 @@
+#mobBasket {
+  padding: 50px 0;
+  width: 100%;
+
+  .mobBasket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--tap {
+      &__nav {
+        display: flex;
+        align-items: center;
+
+        &--of {
+          font-weight: 300;
+          font-size: 24px;
+          color: #72072D;
+        }
+
+        div {
+          width: 2px;
+          height: 25px;
+          margin: 0 15px;
+          background: black;
+        }
+
+        &--basket {
+          font-weight: 600;
+          font-size: 28px;
+          color: #72072D;
+          position: relative;
+
+          &::before {
+            content: '';
+            width: 100%;
+            height: 4px;
+            background: #FF00C7;
+            position: absolute;
+            bottom: -8px;
+            border-radius: 3px;
+          }
+        }
+      }
+
+      h3 {
+        font-weight: 300;
+        font-size: 20px;
+        color: #72072D;
+        text-align: center;
+        margin-top: 30px;
+
+        span {
+          font-weight: 700;
+          font-size: 27px;
+          color: #72072D;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    &--group {
+      margin-top: 30px;
+      width: 100%;
+      height: 520px;
+      overflow: scroll;
+
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #FF005C;
+        border-radius: 5px;
+      }
+
+      &__cloth {
+        width: 100%;
+        height: 220px;
+        display: flex;
+        margin: 20px 0;
+
+        &--img {
+          height: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+
+        &--info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-left: 20px;
+
+          h1 {
+            font-weight: 400;
+            font-size: 24px;
+            color: #434343;
+          }
+
+          h4 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgba(0, 0, 0, 0.7);
+
+            span {
+              font-size: 20px;
+              color: rgba(16, 15, 15, 0.89);
+            }
+          }
+
+          h2 {
+            font-weight: 700;
+            font-size: 15px;
+            color: #FF005C;
+          }
+
+          &__count {
+            cursor: pointer;
+            display: flex;
+            width: 80px;
+            height: 20px;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #DF0251;
+
+            div {
+              width: 20px;
+              height: 20px;
+              background: #DF0251;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: white;
+            }
+          }
+
+          h3 {
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 15px;
+            color: #FF0000;
+          }
+        }
+      }
+    }
+
+    &--btn {
+      width: 90%;
+      height: 70px;
+      margin-top: 20px;
+
+      button {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: 3px solid #FF005C;
+        font-weight: 400;
+        font-size: 15px;
+        color: #FF005C;
+      }
+    }
+  }
+}
+
+@media (max-width: 525px) {
+  #mobBasket {
+    .mobBasket {
+      &--tap {
+        &__nav {
+
+          &--of {
+            h2 {
+              font-size: 18px;
+
+            }
+          }
+
+          &--basket {
+            h2 {
+              font-size: 21px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  #mobBasket {
+    .mobBasket {
+      &--tap {
+        &__nav {
+
+
+          &--of {
+            font-size: 18px;
+          }
+
+          &--basket {
+            font-size: 21px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  #mobBasket {
+    .mobBasket {
+      &--tap {
+        &__nav {
+
+
+          &--of {
+            font-size: 16px;
+          }
+
+          &--basket {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  #mobBasket {
+    .mobBasket {
+      &--tap {
+        &__nav {
+
+
+          &--of {
+            font-size: 14px;
+          }
+
+          &--basket {
+            font-size: 16px;
+          }
+        }
+        h3{
+          font-size: 18px;
+        }
+      }
+      &--group{
+        &__cloth {
+          &--info {
+            h1{
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

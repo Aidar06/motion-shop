@@ -15,6 +15,7 @@ import AddBasket from "./pages/AddBasket/addBasket";
 import Search from "./components/modalSearch/search";
 import BurgerMenu from "./components/BurgerMenu/burgerMenu";
 import Searcher from "./pages/Searcher/searcher";
+import MobileBasket from "./pages/MobileBakset/mobileBasket";
 
 
 
@@ -37,6 +38,7 @@ function App() {
             <Route path='/shoe' element={<Shoe/>}/>
             <Route path='/addBasket/:id' element={<AddBasket/>}/>
             <Route path='/searcher' element={<Searcher/>}/>
+            <Route path='/mobBasket' element={<MobileBasket/>}/>
         </Routes>
       <Footer/>
     </>
