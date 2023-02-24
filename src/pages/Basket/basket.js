@@ -85,9 +85,20 @@ const Basket = () => {
         <section id='basket'><h4>Оформление товара</h4>
             <div className="container">
                 <h1 className='basket-text' style={{display: check === false?'block':"none"}}>В корзине ничего не найдено!</h1>
+                <div className="basket-text--basketDecor">
+                <div className="basket-text--basketDecor__decor">
+                    <h1>Оформление</h1>
+                    <div className="basket-text--basketDecor__decor--decorX"></div>
+                    <h2>Что у меня в корзине?</h2>
+                </div>
+                <div className="basket-text--basketDecor__total">
+                    <p>Общая сумма:</p>
+                    <h1>3000$</h1>
+                </div>
+                </div>
                 <div className="basket" style={{display: check?'':"none"}}>
-                    <div className="basket--block">
 
+                    <div className="basket--block">
                         <div className="basket--block__group">
                             <div className="basket--block__group--input">
                                 <h2>Контакные данные</h2>
