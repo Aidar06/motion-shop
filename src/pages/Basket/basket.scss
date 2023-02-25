@@ -1,18 +1,68 @@
 #basket {
   width: 100%;
   padding: 30px 0;
-  h4{
+
+  h4 {
     font-weight: 700;
     font-size: 40px;
     color: #72072D;
     padding-bottom: 30px;
     padding-left: 30px;
   }
+
   .basket-text {
     font-size: 40px;
     color: rgba(0, 0, 0, 0.66);
     text-align: center;
     padding: 200px 0;
+
+    &--basketDecor {
+      &__decor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+          font-weight: 600;
+          font-size: 36px;
+          color: #72072D;
+          margin: 0 42px;
+        }
+
+        h2 {
+          font-weight: 600;
+          font-size: 26px;
+          color: rgba(114, 7, 45, 0.7);
+        }
+
+        &--decorX {
+          width: 22px;
+          border: 1px solid #000000;
+          transform: rotate(90deg);
+        }
+      }
+
+      &__total {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 32px;
+
+        p {
+          font-weight: 300;
+          font-size: 14px;
+          color: #72072D;
+          margin: 0 8px;
+        }
+
+        h1 {
+          font-weight: 700;
+          font-size: 24px;
+          color: #72072D;
+          margin: 0 8px;
+        }
+      }
+    }
   }
 
   .basket {
@@ -20,12 +70,66 @@
     justify-content: space-between;
     width: 100%;
 
+    &--tap {
+      display: none;
+      &__nav {
+        display: flex;
+        align-items: center;
+
+        &--of {
+          font-weight: 600;
+          font-size: 28px;
+          color: #72072D;
+          position: relative;
+
+          &::before {
+            content: '';
+            width: 100%;
+            height: 4px;
+            background: #FF00C7;
+            position: absolute;
+            bottom: -8px;
+            border-radius: 3px;
+          }
+        }
+
+        div {
+          width: 2px;
+          height: 25px;
+          margin: 0 15px;
+          background: black;
+        }
+
+        &--basket {
+          font-weight: 300;
+          font-size: 24px;
+          color: #72072D;
+        }
+      }
+
+      h3 {
+        font-weight: 300;
+        font-size: 20px;
+        color: #72072D;
+        text-align: center;
+        margin-top: 30px;
+
+        span {
+          font-weight: 700;
+          font-size: 27px;
+          color: #72072D;
+          margin-left: 10px;
+        }
+      }
+    }
+
     h4 {
       font-weight: 700;
       font-size: 40px;
       color: #72072D;
       padding: 10px 0;
     }
+
     &--block {
       width: 60%;
 
@@ -127,8 +231,13 @@
               font-size: 14px;
               margin-left: 10px;
               color: rgba(114, 7, 45, 0.9);
+
+              span {
+                color: #70FF00;
+              }
             }
           }
+
           button {
             margin-top: 20px;
             padding: 10px 60px;
@@ -288,11 +397,30 @@
   }
 }
 
-
+@media (max-width: 1400px) {
+  #basket .basket-text--basketDecor{
+    display: none;
+  }
+}
 @media (max-width: 769px) {
+  #basket .basket-text--basketDecor {
+    display: block;
+  }
   #basket {
+    h4 {
+      display: none;
+    }
+
     .basket {
       flex-direction: column;
+      align-items: center;
+
+      &--tap {
+        display: block;
+        h3 {
+          padding-bottom: 20px;
+        }
+      }
 
       &--block {
         width: 100%;
@@ -302,13 +430,141 @@
         width: 100%;
         height: 400px;
         margin-top: 30px;
+        display: none;
+      }
+    }
+  }
+  #basket h4 {
+    display: none;
+  }
+  #basket {
+    .basket {
+      &--group {
+        display: none;
       }
     }
   }
 }
 
 
-@media (max-width: 451px) {
+@media (max-width: 576px) {
+  #basket {
+    .basket-text {
+      &--basketDecor {
+        &__decor {
+          h2 {
+            font-size: 22px;
+          }
+          h1{
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #basket {
+
+    .basket {
+      flex-direction: column;
+      align-items: center;
+
+      &--tap {
+
+      }
+
+      &--block {
+        //width: 100%;
+
+        &__group {
+          flex-direction: column;
+          align-items: center;
+        }
+
+
+      }
+
+
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #basket {
+
+    .basket {
+
+
+      &--tap {
+
+      }
+
+      &--block {
+        width: 100%;
+        &__group {
+          width: 100%;
+          &--input{
+            width: 100%;
+            input{
+              width: 100%;
+            }
+          }
+
+          &--del {
+            width: 100%;
+            align-items: center;
+          }
+
+          &--pay {
+            width: 100%;
+            padding-top: 0;
+            align-items: center;
+          }
+
+          &--payTwo {
+            width: 100%;
+            margin-top: 10px;
+
+            &--card {
+              height: 100%;
+            }
+          }
+        }
+
+      }
+
+
+    }
+  }
+}
+
+
+@media (max-width: 451px)  {
+  #basket {
+    .basket {
+
+      &--tap {
+        &__nav{
+          &--basket{
+            font-size: 18px;
+          }
+        }
+      }
+      &--block {
+        &__group {
+          &--payTwo {
+            &__card {
+              div {
+              width: 40%;
+            }
+            }
+          }
+        }
+      }
+    }
+  }
   #basket {
     .basket {
       &--block {
@@ -340,9 +596,27 @@
       }
     }
   }
+  #basket {
+    .basket-text {
+      &--basketDecor {
+        &__decor {
+          h2 {
+            font-size: 18px;
+          }
+          h1{
+            font-size: 18px;
+            margin: 0 33px;
+        }
+      }
+    }
+  }
+  }
 }
 
 @media (max-width: 401px) {
+  #basket .basket-text--basketDecor__decor h1 {
+    margin: 0 14px;
+  }
   #basket {
     .basket {
       &--group {
@@ -356,10 +630,51 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
+  #basket {
+    .basket-text {
+      &--basketDecor {
+        &__total {
+          h1 {
+            font-size: 20px;
+          }
 
+          &__decor {
+            &--decorX {
+              width: 14px;
+            }
+
+            h1 {
+              margin: 0 5px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
-
 @media (max-width: 320px) {
-
+  #basket {
+    .basket-text {
+      &--basketDecor {
+        &__total {
+          h1 {
+            font-size: 20px;
+          }
+        }
+        &__decor {
+          &--decorX{
+            width: 14px;
+          }
+          h2 {
+            font-size: 14px;
+          }
+          h1{
+            font-size: 14px;
+            margin: 0 16px;
+          }
+        }
+      }
+    }
+  }
 }

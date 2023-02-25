@@ -119,6 +119,16 @@
     }
 }
 
+@media (max-width: 510px) {
+  #footer{
+    .footer{
+      h1{
+        width: 440px;
+      }
+    }
+  }
+}
+
 @media (max-width: 451px) {
   #footer{
     .footer{
@@ -153,6 +163,16 @@
         margin-bottom: 40px;
         width: 340px;
         text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #footer{
+    .footer{
+      h1{
+        width: 300px;
       }
     }
   }

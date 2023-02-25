@@ -82,10 +82,24 @@ const Basket = () => {
     gerMoneyCount()
 
     return (
-        <section id='basket'><h4>Оформление товара</h4>
+        <section id='basket'>
+            <h4 style={{display: check?'':"none"}}>Оформление товара</h4>
             <div className="container">
                 <h1 className='basket-text' style={{display: check === false?'block':"none"}}>В корзине ничего не найдено!</h1>
                 <div className="basket" style={{display: check?'':"none"}}>
+                    <div className="basket--tap">
+                        <div className='basket--tap__nav'>
+                            <NavLink to={''}>
+                                <h2 className='basket--tap__nav--of'>Оформление</h2>
+                            </NavLink>
+                            <div></div>
+                            <NavLink to={'/mobBasket'}>
+                                <h2 className='basket--tap__nav--basket'>Что у меня в корзине?</h2>
+                            </NavLink>
+                        </div>
+                        <h3>Общая сумма:    <span>{newMoney} сом</span></h3>
+                    </div>
+
                     <div className="basket--block">
 
                         <div className="basket--block__group">
@@ -110,6 +124,7 @@ const Basket = () => {
                                 <input type="text" className='basket--block__group--del__ad' placeholder='Область, город (район, село), улица, дом№, кв.№*'/>
                             </div>
                         </div>
+
                         <div className="basket--block__group">
                             <div className="basket--block__group--pay">
                                 <h2>Оплата</h2>
@@ -123,6 +138,7 @@ const Basket = () => {
                                 </div>
                                 <button>Оплатить</button>
                             </div>
+
                             <div className="basket--block__group--payTwo">
                                 <div className="basket--block__group--payTwo__card">
                                     <div>

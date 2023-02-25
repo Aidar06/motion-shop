@@ -118,7 +118,7 @@
               border: 1px solid #FF005C;
               color: #FF005C;
               padding: 5px;
-              margin-left: 10px;
+              margin: 8.50px 15px;
               font-size: 13px;
             }
           }
@@ -167,9 +167,16 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1124px) {
   #addBasket {
     padding: 0;
+    .addBasket{
+      &--block{
+        &__size {
+          width: 100%;
+        }
+    }
+    }
   }
 }
 
@@ -201,12 +208,15 @@
         }
 
         &__btn {
-          flex-direction: row;
+          flex-direction: column;
           justify-content: center;
           margin-top: 20px;
-
+          align-items: center;
+          &--link{
+            flex-direction: column;
+          }
           button {
-            margin: 0 10px;
+            margin: 10px 10px;
           }
         }
       }
@@ -225,10 +235,12 @@
     .addBasket {
       height: 950px;
       flex-direction: column;
-
+      &--img{
+        width: 60%;
+      }
       &--block {
         text-align: center;
-        width: 80%;
+        width: 100%;
 
         h1 {
           align-items: center;
@@ -243,18 +255,6 @@
           flex-wrap: wrap;
           width: 100%;
           overflow: scroll;
-
-          &--cc {
-            //margin: 10px 0;
-          }
-
-          &--ss {
-            //margin: 10px 0;
-          }
-
-          &--xs {
-            margin: 10px 0;
-          }
         }
 
         &__color {
@@ -262,18 +262,12 @@
         }
 
         &__btn {
-          flex-direction: row;
-          justify-content: center;
-          margin-top: 20px;
-
-          button {
-            margin: 0 10px;
-          }
         }
       }
     }
 
     .addBasketDis {
+      margin-top: 40px;
       p {
         text-align: center;
       }
@@ -291,6 +285,10 @@
         text-align: center;
         width: 80%;
 
+        h5{
+          margin-top: 0;
+        }
+
         h1 {
           align-items: center;
         }
@@ -304,31 +302,15 @@
           flex-wrap: wrap;
           width: 100%;
           overflow: scroll;
-
-          &--cc {
-            //margin: 10px 0;
-          }
-
-          &--ss {
-            margin: 10px 0;
-          }
-
-          &--xs {
-            margin: 10px 0;
-          }
         }
 
         &__color {
           justify-content: center;
         }
 
-        &__btn {
-          flex-direction: row;
-          justify-content: center;
-          margin-top: 20px;
-
-          button {
-            margin: 0 10px;
+        &__btn{
+          button{
+            width: 70%;
           }
         }
       }
@@ -347,57 +329,24 @@
     .addBasket {
       height: 950px;
       flex-direction: column;
-
+      &--img{
+        width: 70%;
+      }
       &--block {
-        text-align: center;
-        width: 80%;
-
-        h1 {
-          align-items: center;
-        }
-
-        &__col {
-          margin-top: 0;
-        }
+        width: 100%;
+        align-items: center;
 
         &__size {
-          display: flex;
-          flex-wrap: wrap;
+          width: 80%;
+        }
+
+        &__btn{
           width: 100%;
-          overflow: scroll;
-
-          &--xl {
-            margin: 0 1px;
-          }
-          &--xxl {
-            margin: 0 1px;
-          }
-          &--cc {
-            margin: 10px 0;
-          }
-
-          &--ss {
-            margin: 10px 0;
-          }
-
-          &--xs {
-            margin: 10px 0;
+          button{
+            width: 90%;
           }
         }
 
-        &__color {
-          justify-content: center;
-        }
-
-        &__btn {
-          flex-direction: row;
-          justify-content: center;
-          margin-top: 20px;
-
-          button {
-            margin: 0 10px;
-          }
-        }
       }
     }
 
@@ -415,28 +364,14 @@
 }
 
 @media (max-width: 400px) {
-  #addBasket .addBasket--block__size div {
-    margin: 5px;
-  }
-  #addBasket .addBasket--block__btn button {
-    width: 49%;
-  }
+
 }
 
 @media (max-width: 376px) {
-  #addBasket .addBasket--block__btn button {
-    /* margin: 0 10px; */
-    width: 54%;
-  }
+
 }
 
 @media (max-width: 320px) {
-  #addBasket .addBasket--block__color div {
-    height: 72px;
-  }
-  #addBasket .addBasket--block__btn button {
-    /* margin: 0 10px; */
-    width: 72%;
-  }
+
 }
 
