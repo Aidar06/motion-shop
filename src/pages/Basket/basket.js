@@ -83,7 +83,7 @@ const Basket = () => {
 
     return (
         <section id='basket'>
-            <h4>Оформление товара</h4>
+            <h4 style={{display: check?'':"none"}}>Оформление товара</h4>
             <div className="container">
                 <h1 className='basket-text' style={{display: check === false?'block':"none"}}>В корзине ничего не найдено!</h1>
                 <div className="basket" style={{display: check?'':"none"}}>
