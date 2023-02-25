@@ -34,6 +34,7 @@ const AddBasket = () => {
     let sizeArrVel = [M, XL, XXL, C, S, XS]
     let sizeArrVelSt = ['M', 'XL', 'XXL', 'C', 'S', 'XS']
     let sizeArrVelStShoe = ['34', '35', '36', '37', '38', '39']
+
     const clearSize = () => {
         for (let i = 0; i < sizeArr.length; i++) {
             sizeArr[i](false)
@@ -104,6 +105,7 @@ const AddBasket = () => {
 
         clothes = [...clothes, newCloth]
         let cloth = localStorage.setItem('clothes', JSON.stringify(clothes))
+
     }
 
 
@@ -128,11 +130,15 @@ const AddBasket = () => {
             setAdding(true)
         }, 1500)
     }
+    const [basketS, setBasketS] = useState(false )
 
     function addBtn() {
+
+
         addBasket()
         addingBtn()
     }
+
 
     return (
         <section id='addBasket'>
@@ -140,6 +146,7 @@ const AddBasket = () => {
                 <div className="addBasket">
                     <div className="addBasket--img">
                         <img src={obj.img} alt=""/>
+
                     </div>
                     <div className="addBasket--block">
                         <h1>{obj.title}</h1>
@@ -218,14 +225,21 @@ const AddBasket = () => {
                                 <button onClick={() => {
                                     if (!check && arrCheckSize.length !== 0 && arrCheckColor.length !== 0) {
                                         addBtn()
+
                                     }
                                 }} style={{
                                     background: adding ? '' : 'green',
                                     color: adding ? '' : 'white'
                                 }}>{adding ? check ? 'Перейти в корзину' : 'Добавить в корзину' : 'Добавлено'}</button>
-                                <div className='addBasket--block__btn--link__check'>
-                                    <div style={{display: arrCheckSize.length === 0 ? '' : 'none'}}><p>Пожалуйста, выберите размер!</p></div>
-                                    <div style={{display: arrCheckColor.length === 0 ? '' : 'none'}}><p>Пожалуйста, выберите цвет!</p></div>
+                                <div className={ "addBasket--block__btn--link__check"}>
+                                    {
+
+                                            <div style={{display: arrCheckSize.length === 0 ? basketS  ? 'none ' : 'none' : "block "}}><p>Пожалуйста,
+                                            выберите размер!</p></div>
+
+                                    }
+                                    <div style={{display: arrCheckColor.length === 0 ? '' : 'none'}}><p>Пожалуйста,
+                                        выберите цвет!</p></div>
                                 </div>
                             </NavLink>
                             <button>Купить сейчас</button>
