@@ -130,7 +130,8 @@ const AddBasket = () => {
             setAdding(true)
         }, 1500)
     }
-    const [basketS, setBasketS] = useState(false )
+
+    const [basketS, setBasketS] = useState(false)
 
     function addBtn() {
 
@@ -139,7 +140,7 @@ const AddBasket = () => {
         addingBtn()
     }
 
-    const [choose,setChoose] = useState(false)
+    const [choose, setChoose] = useState(false)
 
     return (
         <section id='addBasket'>
@@ -228,23 +229,16 @@ const AddBasket = () => {
                                         addBtn()
 
                                     }
-                                    !check && arrCheckSize.length !== 0 && arrCheckColor.length !== 0 ? addBtn(): setChoose(true)
+                                    !check && arrCheckSize.length !== 0 && arrCheckColor.length !== 0 ? addBtn() : setChoose(true)
                                 }} style={{
                                     background: adding ? '' : 'green',
                                     color: adding ? '' : 'white'
                                 }}>{adding ? check ? 'Перейти в корзину' : 'Добавить в корзину' : 'Добавлено'}</button>
-                                <div className={ "addBasket--block__btn--link__check"}>
-                                    {
-
-                                            <div style={{display: arrCheckSize.length === 0 ? basketS  ? 'none ' : 'none' : "block "}}><p>Пожалуйста,
-                                            выберите размер!</p></div>
-
-                                    }
-                                    <div style={{display: arrCheckColor.length === 0 ? '' : 'none'}}><p>Пожалуйста,
-                                        выберите цвет!</p></div>
                                 <div className='addBasket--block__btn--link__check'>
-                                    <div style={{display: arrCheckSize.length === 0 && choose ? '' : 'none'}}><p>Пожалуйста, выберите размер!</p></div>
-                                    <div style={{display: arrCheckColor.length === 0 && choose ? '' : 'none'}}><p>Пожалуйста, выберите цвет!</p></div>
+                                    <div style={{display: arrCheckSize.length === 0 && choose ? '' : 'none'}}>
+                                        <p>Пожалуйста, выберите размер!</p></div>
+                                    <div style={{display: arrCheckColor.length === 0 && choose ? '' : 'none'}}>
+                                        <p>Пожалуйста, выберите цвет!</p></div>
                                 </div>
                             </NavLink>
                             <button>Купить сейчас</button>
