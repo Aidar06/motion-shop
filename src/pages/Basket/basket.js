@@ -28,6 +28,10 @@ const Basket = () => {
     function removeClothes() {
         let clothes = JSON.parse(localStorage.getItem('clothes'))
 
+
+    function removeClothes() {
+        let clothes = JSON.parse(localStorage.getItem('clothes'))
+
         clothes = clothes.filter(el => {
             return el.id !== num
         })
@@ -135,6 +139,8 @@ const Basket = () => {
                                     }} type="radio" name='tabs' id='order'/>
                                     <label htmlFor="order"><h5>Доставка курьером</h5></label>
                                 </div>
+                                <input type="text" className='basket--block__group--del__ad'
+                                       placeholder='Область, город (район, село), улица, дом.№, кв.№*'/>
                                 {
                                     own ?
                                         <select>
@@ -156,6 +162,8 @@ const Basket = () => {
                                     <input type="radio" name='tabs' id='mon'/>
                                     <label htmlFor='mon'><p>Оплачу наличными при получении <br/> заказа</p></label>
                                 </div>
+                                <button>Заказать</button>
+
                                 <div className="basket--block__group--pay__order">
                                     <input type="radio" name='tabs' id='bank'/>
                                     <label htmlFor='bank'><p>Оплата с банковской картой через <br/> <span>PayBox</span></p></label>

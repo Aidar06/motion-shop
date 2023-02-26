@@ -48,7 +48,7 @@ const Header = () => {
                         <h1>MOTION <span>SHOP</span></h1>
                     </NavLink>
                     <div className='navbar--search'>
-                        <input onInput={showInput} ref={textInput} type="text"/>
+                        <input onInput={showInput} ref={textInput} type="text" placeholder="Я ищу..."/>
                         <NavLink className='navbar--search__icon' to={'/searcher'}>
                             <BsSearch/>
                         </NavLink>

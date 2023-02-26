@@ -222,6 +222,7 @@
           flex-direction: column;
           justify-content: end;
           margin-top: 130px;
+          padding: 20px 0;
 
           h2 {
             font-weight: 700;
@@ -233,6 +234,7 @@
           &__order {
             display: flex;
             align-items: center;
+
             margin: 10px 0;
 
             input {
@@ -248,6 +250,25 @@
 
               span {
                 color: #70FF00;
+              }
+            }
+
+            button {
+              margin-top: 20px;
+              padding: 10px 60px;
+              width: 70%;
+              background: #72072D;
+              border-radius: 3px;
+              font-weight: 400;
+              font-size: 16px;
+              border: none;
+              color: #FFFFFF;
+              transition: .6s;
+
+              &:hover {
+                background: transparent;
+                color: #72072D;
+                border: 1px solid #72072D;
               }
             }
           }
