@@ -23,6 +23,8 @@ const Header = () => {
             behavior: 'smooth'
         })
     }
+    
+
 
     let textInput = React.createRef()
 

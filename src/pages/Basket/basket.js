@@ -28,6 +28,10 @@ const Basket = () => {
     function removeClothes() {
         let clothes = JSON.parse(localStorage.getItem('clothes'))
 
+
+    function removeClothes() {
+        let clothes = JSON.parse(localStorage.getItem('clothes'))
+
         clothes = clothes.filter(el => {
             return el.id !== num
         })
@@ -86,6 +90,8 @@ const Basket = () => {
 
     gerMoneyCount()
 
+    const [own, setOwn] = useState(true)
+
     return (
         <section id='basket'>
             <h4 style={{display: check ? '' : "none"}}>Оформление товара</h4>
@@ -117,18 +123,35 @@ const Basket = () => {
                                 <input type="tel" placeholder='Телефон*'/>
                             </div>
                             <div className="basket--block__group--del">
+                                <label for="own"></label>
+                                <label for="order"></label>
                                 <h2>Доставка</h2>
                                 <p>Выберите удобный способ доставки для этого заказа.</p>
                                 <div>
-                                    <input type="radio"/>
-                                    <h5>Самовывоз</h5>
+                                    <input onClick={() => {
+                                        setOwn(true)
+                                    }} type="radio" name='tabs' id='own'/>
+                                    <label htmlFor="own"><h5>Самовывоз</h5></label>
                                 </div>
                                 <div>
-                                    <input type="radio" id='test'/>
-                                    <h5>Доставка курьером</h5>
+                                    <input onClick={() => {
+                                        setOwn(false)
+                                    }} type="radio" name='tabs' id='order'/>
+                                    <label htmlFor="order"><h5>Доставка курьером</h5></label>
                                 </div>
                                 <input type="text" className='basket--block__group--del__ad'
-                                       placeholder='Область, город (район, село), улица, дом№, кв.№*'/>
+                                       placeholder='Область, город (район, село), улица, дом.№, кв.№*'/>
+                                {
+                                    own ?
+                                        <select>
+                                            <option>Бишкек</option>
+                                            <option>Кант</option>
+                                            <option>Токмок</option>
+                                            <option>Ош</option>
+                                        </select>
+                                        :
+                                        <input type="text" className='basket--block__group--del__ad' placeholder='Область, город (район, село), улица, дом№, кв.№*'/>
+                                }
                             </div>
                         </div>
 
@@ -136,14 +159,15 @@ const Basket = () => {
                             <div className="basket--block__group--pay">
                                 <h2>Оплата</h2>
                                 <div className="basket--block__group--pay__order">
-                                    <input type="radio"/>
-                                    <p>Оплачу наличными при получении <br/> заказа</p>
+                                    <input type="radio" name='tabs' id='mon'/>
+                                    <label htmlFor='mon'><p>Оплачу наличными при получении <br/> заказа</p></label>
                                 </div>
                                 <button>Заказать</button>
 
                                 <div className="basket--block__group--pay__order">
-                                    <input type="radio"/>
-                                    <p>Оплата с банковской картой через <br/> <span>PayBox</span></p>
+                                    <input type="radio" name='tabs' id='bank'/>
+                                    <label htmlFor='bank'><p>Оплата с банковской картой через <br/> <span>PayBox</span></p></label>
+
                                 </div>
                                 <button>Оплатить</button>
                             </div>

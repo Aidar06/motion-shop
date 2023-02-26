@@ -194,10 +194,24 @@
           &__ad {
             padding-left: 10px;
             width: 90%;
-            height: 40%;
+            height: 100px;
             border: 2px solid #72072D;
             border-radius: 2px;
             color: #282c34;
+          }
+
+          select{
+            width: 100%;
+            height: 40px;
+            list-style: none;
+            border: 2px solid #72072D;
+            color: #72072D;
+            option{
+              height: 40px;
+              list-style: none;
+              border: 2px solid #72072D;
+              color: #72072D;
+            }
           }
         }
 
