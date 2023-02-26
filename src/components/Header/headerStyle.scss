@@ -7,6 +7,7 @@
   position: relative;
   z-index: 90;
 
+
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -268,6 +269,7 @@
 
 @media (max-width: 770px) {
   #header {
+    //padding: 20px 0;
     .headerUp {
       right: 30px;
       width: 35px;
