@@ -167,12 +167,16 @@
 @media (max-width: 576px) {
   #category .category--block {
     justify-content: center;
+    align-content: center;
+
   }
 }
+
 @media (max-width: 405px) {
   #category {
     .category {
       &--block {
+        align-content: center;
 
         &__man {
           img {
@@ -230,6 +234,74 @@
           }
         }
 
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  #category {
+    .category {
+      &--block {
+        align-content: center;
+        align-items: center;
+        //margin: 0 30px;
+        padding: 0 20px;
+        &__man {
+          img {
+            width: 90%;
+          }
+
+          p {
+            font-size: 21px;
+          }
+
+          &__icon {
+            font-size: 16px;
+          }
+        }
+
+        &__woman {
+          img {
+            width: 90%;
+          }
+
+          p {
+            font-size: 21px;
+          }
+
+          &__icon {
+            font-size: 16px;
+          }
+        }
+
+        &__child {
+          img {
+            width: 90%;
+          }
+
+          p {
+            font-size: 21px;
+          }
+
+          &__icon {
+            font-size: 16px;
+          }
+        }
+
+        &__shoe {
+          img {
+            width: 90%;
+          }
+
+          p {
+            font-size: 21px;
+          }
+
+          &__icon {
+            font-size: 16px;
+          }
+        }
 
       }
     }
@@ -238,10 +310,88 @@
 
 @media (max-width: 350px) {
   #category {
+
     .category {
+
       &--block {
         display: flex;
         align-items: center;
+        align-content: center;
+        padding: 0 20px;
+
+        &__man {
+          img {
+            width: 90%;
+          }
+
+          p {
+            font-size: 18px;
+          }
+
+          &__icon {
+            font-size: 14px;
+          }
+        }
+
+        &__woman {
+          img {
+            width: 90%;
+          }
+
+          p {
+            font-size: 18px;
+          }
+
+          &__icon {
+            font-size: 14px;
+          }
+        }
+
+        &__child {
+          img {
+            width: 90%;
+          }
+
+          p {
+            font-size: 18px;
+          }
+
+          &__icon {
+            font-size: 14px;
+          }
+        }
+
+        &__shoe {
+          img {
+            width: 90%;
+          }
+
+          p {
+            font-size: 18px;
+          }
+
+          &__icon {
+            font-size: 14px;
+            padding: 0 10px;
+          }
+        }
+
+
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #category {
+
+    .category {
+
+      &--block {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        padding: 0 20px;
 
         &__man {
           img {

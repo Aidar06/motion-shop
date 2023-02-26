@@ -106,6 +106,7 @@
     display: flex;
     flex-direction: column-reverse;
   }
+
   #hero {
     .hero {
       &--cloth {
@@ -118,7 +119,10 @@
           flex-direction: inherit;
 
           a {
-            margin: 5px 6px
+            margin: 5px 6px;
+            font-size: 22px;
+            padding: 0 3px;
+
           }
         }
       }
@@ -139,6 +143,7 @@
         &__text {
           a {
             margin: 5px 2px;
+            font-size: 18px;
 
             li {
               font-size: 16px;
@@ -170,7 +175,7 @@
         &__text {
           a {
             margin: 5px 2px;
-            font-size: 18px;
+            font-size: 16px;
           }
         }
       }
@@ -201,6 +206,12 @@
         h1 {
           font-size: 24px;
         }
+
+        &__text {
+          a {
+            font-size: 13px;
+          }
+        }
       }
     }
   }
@@ -220,7 +231,8 @@
 
         &__text {
           a {
-            font-size: 15px;
+            font-size: 12px;
+
           }
         }
       }
@@ -247,7 +259,30 @@
 
         &__text {
           a {
-            font-size: 12px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 305px) {
+  #hero {
+    img {
+      width: 100%;
+    }
+
+    .hero {
+      &--cloth {
+        h1 {
+          font-size: 18px;
+          text-align: center;
+        }
+
+        &__text {
+          a {
+            font-size: 9px;
           }
         }
       }
