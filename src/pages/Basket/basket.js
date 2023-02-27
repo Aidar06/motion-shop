@@ -25,9 +25,6 @@ const Basket = () => {
 
     const [num, setNum] = useState(0)
 
-    function removeClothes() {
-        let clothes = JSON.parse(localStorage.getItem('clothes'))
-
 
     function removeClothes() {
         let clothes = JSON.parse(localStorage.getItem('clothes'))
@@ -96,8 +93,12 @@ const Basket = () => {
         <section id='basket'>
             <h4 style={{display: check ? '' : "none"}}>Оформление товара</h4>
             <div className="container">
-                <h1 className='basket-text' style={{display: check === false ? 'block' : "none"}}>В корзине ничего не
-                    найдено!</h1>
+
+                <h1 className='basket-text'
+                    style={{display: check === false ? 'block' : "none"}}>
+                    В корзине ничего не найдено!
+                </h1>
+
                 <div className="basket" style={{display: check ? '' : "none"}}>
                     <div className="basket--tap">
                         <div className='basket--tap__nav'>
@@ -139,8 +140,6 @@ const Basket = () => {
                                     }} type="radio" name='tabs' id='order'/>
                                     <label htmlFor="order"><h5>Доставка курьером</h5></label>
                                 </div>
-                                <input type="text" className='basket--block__group--del__ad'
-                                       placeholder='Область, город (район, село), улица, дом.№, кв.№*'/>
                                 {
                                     own ?
                                         <select>
@@ -150,7 +149,8 @@ const Basket = () => {
                                             <option>Ош</option>
                                         </select>
                                         :
-                                        <input type="text" className='basket--block__group--del__ad' placeholder='Область, город (район, село), улица, дом№, кв.№*'/>
+                                        <input type="text" className='basket--block__group--del__ad'
+                                               placeholder='Область, город (район, село), улица, дом№, кв.№*'/>
                                 }
                             </div>
                         </div>
@@ -166,8 +166,8 @@ const Basket = () => {
 
                                 <div className="basket--block__group--pay__order">
                                     <input type="radio" name='tabs' id='bank'/>
-                                    <label htmlFor='bank'><p>Оплата с банковской картой через <br/> <span>PayBox</span></p></label>
-
+                                    <label htmlFor='bank'><p>Оплата с банковской картой через <br/>
+                                        <span>PayBox</span></p></label>
                                 </div>
                                 <button>Оплатить</button>
                             </div>
@@ -187,7 +187,8 @@ const Basket = () => {
                         {
                             date ? clothes.map(el => {
                                 return (
-                                    <div onMouseMove={() => setNum(el.id)} className='basket--group__cloth' key={el.id}>
+                                    <div onMouseMove={() => setNum(el.id)} className='basket--group__cloth'
+                                         key={el.id}>
                                         <div className='basket--group__cloth--img'>
                                             <NavLink to={`/addBasket/${el.clothId}`} key={el.clothId}>
                                                 <img src={el.img} alt=""/>
@@ -216,5 +217,6 @@ const Basket = () => {
         </section>
     );
 };
+
 
 export default Basket;
