@@ -69,7 +69,6 @@ const Basket = () => {
                 n.push(el)
             }
         })
-
         clothes = n
         let cloth = localStorage.setItem('clothes', JSON.stringify(clothes))
         apDate()
@@ -123,7 +122,7 @@ const Basket = () => {
                                 <input type="text" placeholder='E-Mail*'/>
                                 <input type="tel" placeholder='Телефон*'/>
                             </div>
-                            <div className="basket--block__group--del">
+                            <div className="basket--block__ group--del">
                                 <label for="own"></label>
                                 <label for="order"></label>
                                 <h2>Доставка</h2>
