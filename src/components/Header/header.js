@@ -1,4 +1,3 @@
-
 import React, {useEffect, useState} from 'react';
 import {BsSearch, BsQuestionCircle, BsArrowUp} from "react-icons/bs";
 import {HiOutlineClipboardDocumentList} from "react-icons/hi2";
@@ -47,12 +46,14 @@ const Header = () => {
                     <NavLink to={'/'}>
                         <h1>MOTION <span>SHOP</span></h1>
                     </NavLink>
+
                     <div className='navbar--search'>
                         <input onInput={showInput} ref={textInput} type="text" placeholder="Я ищу..."/>
                         <NavLink className='navbar--search__icon' to={'/searcher'}>
                             <BsSearch/>
                         </NavLink>
                     </div>
+
                     <nav className='navbar--nav'>
                         <NavLink to={'/faq'}>
                             <div className='navbar--nav__block'>
@@ -60,12 +61,14 @@ const Header = () => {
                                 <h3>FAQ</h3>
                             </div>
                         </NavLink>
+
                         <NavLink to={'/aboutUs'}>
                             <div className='navbar--nav__block'>
                                 <HiOutlineClipboardDocumentList className='navbar--nav__block--icon'/>
                                 <h3>О нас</h3>
                             </div>
                         </NavLink>
+
                         <NavLink to={'/basket'}>
                             <div className='navbar--nav__block'>
                                 <AiOutlineShoppingCart className='navbar--nav__block--icon'/>
@@ -73,9 +76,11 @@ const Header = () => {
                             </div>
                         </NavLink>
                     </nav>
+
                     <div className='navbar--nav__block searchRel' onClick={() => setSearch(!search)}>
                         <BsSearch className='navbar--nav__block--icon'/>
                     </div>
+
                 </div>
             </div>
             <div className='headerUp' onClick={scrollTo}>
