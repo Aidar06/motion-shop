@@ -13,6 +13,7 @@ const WomanClothes = () => {
                 <div className="womanClothes">
                     <div className='womanClothes--category'>
                         <div className='womanClothes--category__block own'>
+
                             <NavLink to={'/man'}>
                                 <div className='womanClothes--category__block--bg'>
                                     <div className='womanClothes--category__block--bg__text'>
@@ -21,6 +22,7 @@ const WomanClothes = () => {
                                     </div>
                                 </div>
                             </NavLink>
+
                         </div>
 
                         <div className='womanClothes--category__block two'>

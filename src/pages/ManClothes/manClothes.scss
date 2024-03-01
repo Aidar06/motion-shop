@@ -59,6 +59,7 @@
             position: absolute;
             left: 20px;
             bottom: 30px;
+
             &--icon {
               font-size: 30px;
               margin-left: 20px;
@@ -69,51 +70,60 @@
         transition: .4s;
       }
     }
-    &--title{
-      font-weight: 700;
-      font-size: 40px;
-      margin: 20px 0;
-      color: #72072D;
+
+    &--title {
+        font-weight: 700;
+        font-size: 40px;
+        margin: 10px 0;
+        color: #72072D;
     }
-    &--group{
+
+    &--group {
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
       margin-top: 50px;
-      &__block{
+
+      &__block {
         width: 230px;
         height: 320px;
         margin: 20px 20px;
-        div{
+
+        div {
           width: 100%;
           height: 260px;
           border-radius: 5px;
-          img{
+
+          img {
             width: 100%;
             height: 260px;
             object-fit: contain;
           }
         }
-        h3{
+
+        h3 {
           font-weight: 500;
           font-size: 24px;
           color: #000000;
           margin-top: 10px;
         }
-        p{
+
+        p {
           font-weight: 300;
           font-size: 16px;
           color: #000000;
         }
       }
     }
-    &--btn{
+
+    &--btn {
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 40px;
-      button{
+
+      button {
         padding: 10px 30px;
         border-radius: 20px;
         border: 1px solid #D118A8;
@@ -124,6 +134,11 @@
   }
 }
 
+@media (max-width: 1400px) {
+  #manClothes .manClothes--title select {
+    display: none;
+  }
+}
 
 @media (max-width: 1100px) {
   #manClothes {
@@ -158,8 +173,12 @@
   #manClothes {
     .manClothes {
 
-      &--title{
-       font-size: 30px;
+      &--title {
+        font-size: 30px;
+
+        select {
+          display: block;
+        }
       }
 
       &--category {
@@ -172,10 +191,11 @@
 @media (max-width: 550px) {
   #manClothes {
     .manClothes {
-      &--group{
-        &__block{
+      &--group {
+        &__block {
           width: 160px;
-          h3{
+
+          h3 {
             font-size: 20px;
           }
         }
@@ -187,17 +207,20 @@
 @media (max-width: 470px) {
   #manClothes {
     .manClothes {
-      &--group{
-        &__block{
+      &--group {
+        &__block {
           width: 130px;
           height: 260px;
-          div{
+
+          div {
             height: 170px;
-            img{
+
+            img {
               height: 200px;
             }
           }
-          h3{
+
+          h3 {
             font-size: 20px;
           }
         }
@@ -209,20 +232,24 @@
 @media (max-width: 376px) {
   #manClothes {
     .manClothes {
-      &--title{
+      &--title {
         font-size: 20px;
       }
-      &--group{
-        &__block{
+
+      &--group {
+        &__block {
           width: 100px;
           height: 240px;
-          div{
+
+          div {
             height: 180px;
-            img{
+
+            img {
               height: 180px;
             }
           }
-          h3{
+
+          h3 {
             font-size: 17px;
           }
         }
@@ -232,19 +259,22 @@
 }
 
 @media (max-width: 320px) {
-  #manClothes{
-    .manClothes{
-      &--group{
-        &__block{
+  #manClothes {
+    .manClothes {
+      &--group {
+        &__block {
           width: 104px;
           height: 233px;
-          div{
+
+          div {
             height: 160px;
-            img{
+
+            img {
               height: 160px;
             }
           }
-          h3{
+
+          h3 {
             font-size: 17px;
           }
         }

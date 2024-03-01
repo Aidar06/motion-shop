@@ -7,7 +7,6 @@ import {NavLink} from "react-router-dom";
 import Search from "../modalSearch/search";
 import BurgerMenu from "../BurgerMenu/burgerMenu";
 import {BiMenuAltLeft} from "react-icons/bi";
-import Searcher from "../../pages/Searcher/searcher";
 
 
 const Header = () => {

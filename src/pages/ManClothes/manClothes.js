@@ -3,10 +3,28 @@ import {HiArrowLongDown, HiArrowLongRight} from "react-icons/hi2";
 import {NavLink} from "react-router-dom";
 import {man} from "../../FackBackEnd/backEnd";
 import {AiOutlineArrowDown} from "react-icons/ai";
+import * as PropTypes from "prop-types";
 
 
+function Navlink(props) {
+    return null;
+}
+
+Navlink.propTypes = {
+    to: PropTypes.string,
+    children: PropTypes.node
+};
+
+function NanLink(props) {
+    return null;
+}
+
+NanLink.propTypes = {
+    to: PropTypes.string,
+    children: PropTypes.node
+};
 const ManClothes = () => {
-    const [mere,setMore] = useState(15)
+    const [mere, setMore] = useState(15)
     return (
         <section id="manClothes">
             <div className="container">
@@ -20,7 +38,6 @@ const ManClothes = () => {
                                 </div>
                             </div>
                         </div>
-
                         <div className='manClothes--category__block two'>
                             <NavLink to={'/woman'}>
                                 <div className='manClothes--category__block--bg'>
@@ -31,7 +48,6 @@ const ManClothes = () => {
                                 </div>
                             </NavLink>
                         </div>
-
                         <div className='manClothes--category__block three'>
                             <NavLink to={'/children'}>
                                 <div className='manClothes--category__block--bg'>
@@ -41,9 +57,7 @@ const ManClothes = () => {
                                     </div>
                                 </div>
                             </NavLink>
-
                         </div>
-
                         <div className='manClothes--category__block four'>
                             <NavLink to={'/shoe'}>
                                 <div className='manClothes--category__block--bg'>
@@ -53,14 +67,22 @@ const ManClothes = () => {
                                     </div>
                                 </div>
                             </NavLink>
-
                         </div>
                     </div>
-                    <h1 className='manClothes--title'>Мужская одежда</h1>
+
+                    <h1 className='manClothes--title'>
+                        Мужская одежда <br/>
+
+                        <NavLink to={'/shoe'}>
+                        Женская одежда
+                       </NavLink>
+
+                    </h1>
+
                     <div className="manClothes--group">
                         {
-                            man.slice(0,mere).map(el => {
-                                return(
+                            man.slice(0, mere).map(el => {
+                                return (
                                     <NavLink to={`/addBasket/${el.id}`} key={el.id}>
                                         <div className='manClothes--group__block'>
                                             <div>
@@ -75,7 +97,7 @@ const ManClothes = () => {
                         }
                     </div>
                     <div className='manClothes--btn'>
-                        <button onClick={() => setMore(mere+15)} style={
+                        <button onClick={() => setMore(mere + 15)} style={
                             {
                                 display: mere >= man.length ? 'none' : 'block'
                             }
